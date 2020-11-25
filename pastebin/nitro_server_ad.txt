@@ -1,0 +1,22 @@
+> ``` ```
+> :verified_server: **Zweryfikowany bot**
+> 
+> ``` ```
+> :verified_server: **vave - innowacyjny bot na Discord'a**
+> 
+> ``` ```
+> :icon_channel_lock: **Bezpieczeństwo**
+> :icon_members: **Zaufanie**
+> :icon_follow: **Szybka pomoc**
+> :badge_bughunter_lvl2: **Nagrody za znalezienie błędów**
+> :badge_early_supporter: **Wczesny dostęp** *(pay access)*
+> :badge_booster_lvl1: **Nagrody za :a_booster:BOOSTOWANIE:a_booster: **
+> :coin: **Wszystkie komendy bezpłatne**
+> 
+> ``` ```
+> :badge_booster_lvl4: **Bot jest używany na __300+__ serwerach**
+> 
+> ``` ```
+> :icon_add_friend: **Chcesz pomóc rozpromować bota? Wystarczy że ustawisz status :comet: `vavebot.pl || 300+ servers`**
+> :icon_add_friend: **https://discord.gg/7wq73Sf **
+> ``` ```

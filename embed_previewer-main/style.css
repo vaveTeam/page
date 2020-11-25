@@ -1,0 +1,137 @@
+/*
+###################################################################################
+#                                  Copyright 2020                                 #
+#                                wnm210 & vave Team                               #
+#                                                                                 #
+#                                                                                 #
+#                                only for bigg boys                               #
+#                                                                                 #
+###################################################################################
+*/
+
+
+.preview {
+  background: #36393e;
+  display: -webkit-box;
+  display: flex;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: flex;
+  max-width: 520px;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.side-colored {
+  width: 4px;
+  border-radius: 3px 0 0 3px;
+  background: #4f545c;
+}
+
+.embed {
+  border-radius: 0 3px 3px 0;
+  background: rgba(46, 48, 54, 0.3);
+  border-color: rgba(46, 48, 54, 0.6);
+  display: -webkit-box;
+  display: flex;
+  padding: 8px 10px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+.embed .card-block {
+  padding: 0;
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 10px;
+}
+.embed a {
+  color: #0096cf;
+}
+.embed img.embed-thumb {
+  max-height: 80px;
+  max-width: 80px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 20px;
+}
+.embed .embed-footer {
+  font-size: 12px;
+}
+.embed .embed-footer span {
+  color: rgba(255, 255, 255, 0.6);
+}
+.embed .embed-inner .embed-title {
+  color: #fff;
+}
+.embed .embed-inner .embed-author {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+.embed .embed-inner .embed-author img.embed-author-icon {
+  margin-right: 9px;
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+.embed .embed-inner .embed-author .embed-author-name {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff !important;
+}
+.embed .embed-inner .fields {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  box-lines: miltiple;
+  margin-top: -10px;
+}
+.embed .embed-inner .fields .field {
+  -webkit-box-flex: 0;
+          flex: 0;
+  box-flex: 1;
+  padding-top: 10px;
+  max-width: 506px;
+  min-width: 100%;
+}
+.embed .embed-inner .fields .field.inline {
+  box-flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
+  min-width: 150px;
+  flex-basis: auto;
+}
+.embed .embed-inner .fields .field .field-name {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+.embed .embed-inner .fields .field .field-value {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1em;
+  white-space: pre-wrap;
+  margin-top: 6px;
+  word-wrap: break-word;
+}

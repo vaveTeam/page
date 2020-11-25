@@ -1,0 +1,83 @@
+<!--
+###################################################################################
+#                                  Copyright 2020                                 #
+#                                wnm210 & vave Team                               #
+#                                                                                 #
+#                                                                                 # 
+#                                only for bigg boys                               #
+#                                                                                 #
+###################################################################################
+-->
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Discord Embed Generator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
+<div class="container">
+  <div class="col-md-10 offset-md-1">
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-block">
+          <form id="form" action="/set", method="POST">
+            <div class="form-group">
+              <label>Basic settings</label>
+              <input class="form-control" name="title" id="title" type="text" placeholder="Title"/>
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="description" id="description" type="text" placeholder="Description"/>
+            </div>
+            <div class="form-group">
+              <label>Color</label>
+              <input class="form-control" name="color" id="color" type="color"/>
+            </div>
+            <div class="form-group">
+              <label>Thumbnail settings</label>
+              <input class="form-control" name="icon" id="icon" type="text" placeholder="Thumbnail URL"/>
+            </div>
+            <div class="form-group">
+              <label>Image settings</label>
+              <input class="form-control" name="image" id="image" type="text" placeholder="Image URL"/>
+            </div>
+            <div class="form-group">
+              <label>Fields</label>
+            </div>
+            <div class="input-fields"></div>
+			<br /><br /><br />
+			<input type="submit" class="btn btn-success" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div><br/>
+  <div class="col-md-8 offset-md-2">         
+    <div class="card">
+      <div class="card-header">Embed Preview</div>
+      <div class="card-block preview">
+        <div class="wrapper">
+          <div class="side-colored"></div>
+          <div class="card embed">
+            <div class="card-block">
+              <div class="embed-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br/>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
