@@ -1,0 +1,108 @@
+<!--
+###################################################################################
+#                                  Copyright 2020                                 #
+#                                wnm210 & vave Team                               #
+#                                                                                 #
+#                                                                                 # 
+#                                only for bigg boys                               #
+#                                                                                 #
+###################################################################################
+-->
+
+<!DOCTYPE HTLM>
+<html>
+	<head>
+		<title>vave - Multipurpose bot for Discord</title>
+		<meta charset="UTF-8">
+		
+		<meta property="og:url" content="https://vavebot.pl/" />
+		<meta property="og:site_name" content="#stayathome" />
+		<meta property="og:title" content="vave" />
+		<meta property="og:description" content="Multipurpose & multilanguage bot for Discord servers" />
+		<meta property="og:image" content="https://cdn.vavebot.pl/official_logo.png" />
+		<meta name="theme-color" content="BLUE" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="icon" type="image/png" href="../../../assets/img/favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet">
+		
+		<link rel="stylesheet" href="../../../assets/css/app.css">
+	</head>
+	<body>
+		<div class="noresponsive backgnd">
+			<h1 class="noresponsiveH1">Huh... This page isn't available right now!</h1>
+			<p class="noresponsiveP">Try again later... (or use computer)</p>
+		</div>
+	    <div class="topnav">
+			<a href="https://vavebot.pl/"><img src="https://cdn.vavebot.pl/official_logo.png" /></a>
+			<a class="lnk active" href="https://vavebot.pl/">Land</a>
+			<a class="lnk" href="https://vavebot.pl/dashboard/SERVER_ID/leaderboard">Leaderboard</a>
+			<a class="lnk" href="https://ads.vavebot.pl/">Settings</a>
+			<a class="lnk" style="color: GOLD;" href="https://vavebot.pl/early">Upgrade to early</a>
+			<div class="topnav-right">
+				<a class="lnk" href="https://vavebot.pl/dashboard">Server list</a>
+			</div>
+		</div>
+
+		<div class="pluginHead">
+			<div class="pluginTitle">Custom Links Plugin</div>
+			<a class="pluginPower" href="#popup1">Disable</a>
+		</div>
+		<hr class="pluginSplit">
+
+		<div class="pluginBody">
+			<div class="pluginBodyTitle">Enable force redirect</div>
+			<div class="toggle-switch margin10top" >
+				<input class="tgl-swit" type="checkbox" name="dc_check3" value="no" id="dc-check-id3" />
+				<label class="tgl-swit2" for="dc-check-id3">
+					<div class="area" aria-hidden="true">
+						<div class="background">
+							<div class="handle"></div>
+						</div>
+					</div>
+				</label>
+			</div>
+			<a class="pluginGoldEditButton pluginGoldDisabled">★ Partner Only</a>
+		</div>
+		<hr class="pluginSplit">
+		
+		<div class="pluginFoots">
+			<form>
+				<div class="popupInputName">Set work random response</div>
+				<div class="popupTextSmallInput">
+					<input placeholder="minecraft" maxlength="40" class="popupTransparentInput"/>
+				</div>
+				<input class="popupButtonInput" type="submit" id="submitButton" value="Save" href="#popup1"/>
+			</form>
+		</div>
+		<div id="popup1" class="function_overlay">
+			<div class="function">
+				<h2>Function Unavailable</h2>
+				<a class="close" href="#">&times;</a>
+				<div class="content">
+					<img width="420" height="240" src="https://vavebot.pl/assets/img/early.svg" />
+					<p>Hello there! This function is currently unavailable. Try again later...</p>
+					<div class="popupInputName">Early access</div>
+					<p>Buy early access to unlock this feature. <a href="https://vavebot.pl/donate">Click here</a></p>
+				</div>
+			</div>
+		</div>
+		<script>
+			function charcountupdate(str) {
+				var lng = str.length;
+				var doc = document.getElementById("charcount");
+				var submit = document.getElementById("submitButton");
+				doc.style.color = "white";
+				if(lng == 2000) {
+					doc.style.color = "red";
+				} if(lng == 0) {
+					doc.style.color = "red";
+				} else {
+					doc.style.color = "white";
+				}
+				document.getElementById("charcount").innerHTML = lng + '/2000';
+			}
+		</script>
+	</body>
+</html>
