@@ -9,6 +9,9 @@
 ###################################################################################
 */
 
+$anim-duration: 2;
+$anim-speed: 3;
+
 html {
 	scroll-behavior: smooth;
 }
@@ -18,6 +21,7 @@ body {
 	background-color: #23272A;
 	position: relative;
 	width: 99,99%;
+	box-sizing: border-box;
     color: rgba(255,255,255,0.7);
 }
 
@@ -628,6 +632,11 @@ pre {
 	opacity: 0.2;
 }
 
+.pluginGoldDisabled {
+	cursor: not-allowed;
+	opacity: 0.6;
+}
+
 .pluginHead {
 	margin-left: 180px;
 	margin-right: 180px;
@@ -661,6 +670,13 @@ pre {
 	float: left;
 	color: white;
 	font-size: 20px;
+}
+
+.pluginBodyTitle2 {
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
 }
 
 
@@ -726,8 +742,6 @@ pre {
 
 
 
-
-
 .pluginSplit {
 	margin-top: 120px;
 	margin-left: 80px;
@@ -761,7 +775,215 @@ pre {
 
 
 
+.pluginGoldEditButton {
+	margin-right: 15px;
+	float: right;
+	background: transparent;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	color: gold;
+	padding: 8px 32px;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.3s;
+}
 
+.pluginNotification {
+	text-align: center;
+	background-color: #2f3136;
+	position: relative;
+	width: 100%;
+	height: 20px;
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+.pluginNotificationText {
+	margin-left: 5px;
+	font-weight: bold;
+	width: 100%;
+	color: #99AAB5;
+	font-size: 12px;
+	height: 50px;
+	text-transform: uppercase;
+}
+
+.pluginCards {
+	margin-left: auto;
+	margin-right: auto;
+	width: 870px;
+	height: 160px;
+}
+
+.pluginCard {
+	height: 120px;
+	width: 280px;
+	background-color: #2f3136;
+	border-radius: 5px;
+	margin: 5px;
+	float: left;
+}
+
+.pluginCard2 {
+	height: 90px;
+	width: 207px;
+	background-color: #2f3136;
+	border-radius: 5px;
+	margin: 5px;
+	float: left;
+}
+
+.pluginCard3 {
+	height: 90px;
+	width: 312px;
+	background-color: #2f3136;
+	border-radius: 5px;
+	margin: 5px;
+	float: left;
+}
+
+.pluginCard4 {
+	height: 340px;
+	width: 100%;
+	background-color: #2f3136;
+	border-radius: 5px;
+	margin: 5px;
+	margin-bottom: 50px;
+	float: left;
+}
+
+.pluginCard4ApplyTitle {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	margin-left: 8px;
+	margin-right: 8px;
+	float: left;
+}
+
+.pluginCard4ApplyResponse {
+	color: #99AAB5;
+	font-size: 20px;
+	font-weight: 460;
+}
+
+.pluginCard4ApplyResponse a {
+	color: #7289DA;
+	font-size: 20px;
+	font-weight: 460;
+}
+
+.pluginCard4ApplyTable {
+	background-color: #292b2f;
+	border-radius: 5px;
+	margin-top: 11px;
+	margin-bottom: 10px;
+	width: 98%;
+	height: 100px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.pluginCard4ApplyTableText {
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 15px;
+}
+
+.pluginCard5 {
+	height: 280px;
+	width: 98%;
+	border: 1px solid #000;
+	border-radius: 5px;
+	background-color: #18191c;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+
+.pluginCard5Title {
+	font-weight: 500;
+	font-size: 20px;
+	margin: 15px;
+}
+
+.pluginCard5Description {
+	font-weight: 400;
+	font-size: 15px;
+	margin: 15px;
+}
+
+.pluginCard5Footer {
+	font-weight: 400;
+	font-size: 13px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.header1 {
+    color: #b9bbbe;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 650;
+    line-height: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.pluginCardTitle {
+	font-weight: bold;
+	color: #99AAB5;
+	font-size: 14px;
+	margin-bottom: 2px;
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 2px;
+}
+
+.pluginCardDescription {
+	font-weight: 700;
+	color: white;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	font-size: 32px;
+}
+
+.pluginCardFooter {
+	color: #99AAB5;
+	font-size: 12px;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+.pluginCardFooterImg {
+	width: 20px;
+	height: 20px;
+	float: left;
+}
 
 /* POPUP 2 */
 
@@ -1341,6 +1563,174 @@ a .elements2Description {
 a:active .elements2Description {
 	color: #ffffffb3;
 }
+
+
+
+
+
+
+/*
+# SHINE ANIMATION EFFECT by wnm210 (available on codepen)
+# https://codepen.io/wnm210/pen/qBaBKbr
+*/
+
+:root {
+	--shine-degree: 120deg;
+	--shine-color: rgba(255, 255, 255, 0.2);
+}
+
+.pluginLoadingImg {
+	position: relative;
+	overflow: hidden;
+	font-size: 1.1rem;
+	height: 140px;
+	width: 140px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+	background-color: #2C2F33;
+}
+
+.pluginLoadingImg::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--shine-degree)), color-stop(transparent), color-stop(var(--shine-color)), to(transparent));
+	background: linear-gradient(var(--shine-degree), transparent, var(--shine-color), transparent);
+}
+
+
+
+.pluginLoadingButton {
+	position: relative;
+	overflow: hidden;
+	font-size: 1.1rem;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	margin-top: 10px;
+	margin-bottom: 1px;
+	margin-left: 5px;
+	margin-right: 5px;
+	float: left;
+	background-color: #2C2F33;
+}
+
+.pluginLoadingButton::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--shine-degree)), color-stop(transparent), color-stop(var(--shine-color)), to(transparent));
+	background: linear-gradient(var(--shine-degree), transparent, var(--shine-color), transparent);
+}
+
+
+
+.pluginLoadingTitle {
+	position: relative;
+	overflow: hidden;
+	font-size: 1.1rem;
+	height: 30px;
+	width: 500px;
+	border-radius: 50px;
+	margin-bottom: 10px;
+	background-color: #2C2F33;
+}
+
+.pluginLoadingTitle::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--shine-degree)), color-stop(transparent), color-stop(var(--shine-color)), to(transparent));
+	background: linear-gradient(var(--shine-degree), transparent, var(--shine-color), transparent);
+}
+
+
+
+.pluginLoadingDescription {
+	position: relative;
+	overflow: hidden;
+	font-size: 1.1rem;
+	height: 20px;
+	width: 350px;
+	border-radius: 50px;
+	margin-bottom: 5px;
+	background-color: #2C2F33;
+}
+
+.pluginLoadingDescription::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--shine-degree)), color-stop(transparent), color-stop(var(--shine-color)), to(transparent));
+	background: linear-gradient(var(--shine-degree), transparent, var(--shine-color), transparent);
+}
+
+
+
+.pluginLoadingAnimation::before {
+	-webkit-animation: shine 2s ease-in-out infinite;
+		animation: shine 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes shine {
+  0% {
+    left: -100%;
+    -webkit-transition-property: left;
+    transition-property: left;
+  }
+  60%,
+  100% {
+    left: 100%;
+    -webkit-transition-property: left;
+    transition-property: left;
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+    -webkit-transition-property: left;
+    transition-property: left;
+  }
+  60%,
+  100% {
+    left: 100%;
+    -webkit-transition-property: left;
+    transition-property: left;
+  }
+}
+
+.pluginFoots .container {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: center;
+		justify-content: center;
+	-webkit-box-align: center;
+		align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px;
+	width: 700px;
+	margin-bottom: 25px;
+}
+
+
+
+
+/*
+# RESPONSIVE PAGE
+*/
 
 
 @media screen and (max-width: 800px) {
