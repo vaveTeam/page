@@ -1403,28 +1403,6 @@ select {
 }
 
 /*
-# SCROLLBAR
-*/
-
-::-webkit-scrollbar {
-	height: 5px;
-	width: 0px;
-}
-
-::-webkit-scrollbar-track {
-	background: #2C2F33; 
-}
- 
-::-webkit-scrollbar-thumb {
-	background: #7289DA; 
-	border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background: #99AAB5; 
-}
-
-/*
 # NAVIGATION BAR
 */
 
