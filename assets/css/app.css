@@ -9,6 +9,9 @@
 ###################################################################################
 */
 
+$anim-duration: 2;
+$anim-speed: 3;
+
 html {
 	scroll-behavior: smooth;
 }
@@ -422,6 +425,27 @@ pre {
 }
 
 
+
+/*
+# TERMS SECTION
+*/
+
+.terms {
+	margin-left: auto;
+	margin-right: auto;
+	width: 850px;
+}
+
+.terms .title {
+	color: white;
+	font-size: 34px;
+	font-weight: bold;
+}
+
+.terms .description {
+	color: #99AAB5;
+	font-size: 18px;
+}
 
 
 /*
@@ -1576,12 +1600,8 @@ a:active .elements2Description {
 
 :root {
 	--shine-degree: 120deg;
-	--shine-color: rgba(255, 255, 255, 0.2);
-	
+	--shine-color: rgba(255, 255, 255, 0.2);	
 }
-
-$anim-duration: 2;
-$anim-speed: 3;
 
 .pluginLoadingImg {
 	position: relative;
@@ -1791,6 +1811,7 @@ $anim-speed: 3;
 	hr {display: none;}
 	.topnav {display: none;}
 	.hero {display: none;}
+	.terms {display: none;}
 	.donut {display: none;}
 	.dashboard {display: none;}
 	.pluginHead {display: none;}
