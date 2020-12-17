@@ -9,9 +9,6 @@
 ###################################################################################
 */
 
-$anim-duration: 2;
-$anim-speed: 3;
-
 html {
 	scroll-behavior: smooth;
 }
@@ -373,14 +370,21 @@ pre {
 	color: white;
 }
 
-.donut h1 {
+.donut .h1 {
     text-transform: none;
     font-size: 38px;
     line-height: 1.3;
     text-align: center;
 }
 
-.donut p {
+.donut .h2 {
+    text-transform: none;
+    font-size: 30px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.donut .p1 {
 	font-size: 19px;
     margin-top: 15px;
     margin-bottom: 40px;
@@ -389,50 +393,32 @@ pre {
 	color: #ffffffb3;
 }
 
-.donut a {
-	font-family: 'Open Sans', Helvetica, arial, sans-serif;
-	background-color: #7289DA;
-	transition-duration: 0.4s;
-	text-decoration: none;
-	border-radius: 4px;
-	padding: 13px 60px;
-	margin-right: 5px;
-	user-select: none;
-	font-weight: 600;
-	min-height: 32px;
+.donut .p2 {
+	font-size: 19px;
+    margin-top: 15px;
+	margin-bottom: 15px;
 	margin-left: 5px;
-	cursor: pointer;
-	font-size: 18px;
-	line-height: 1;
-	border: none;
-	color: white;
-}
-
-.donut a:hover {
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.5);
-}
-
-.donut a.black {
-	font-family: 'Open Sans', Helvetica, arial, sans-serif;
-	background-color: #000;
-	transition-duration: 0.4s;
-	text-decoration: none;
-	border-radius: 4px;
-	padding: 13px 60px;
 	margin-right: 5px;
-	user-select: none;
-	font-weight: 600;
-	min-height: 32px;
-	margin-left: 5px;
-	cursor: pointer;
-	font-size: 18px;
-	line-height: 1;
-	border: none;
-	color: white;
+    text-align: center;
+    line-height: 1.8;
+	color: #ffffffb3;
 }
 
-.donut a.black:hover {
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.5);
+.donut .container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 936px;
+	height: 455px;
+}
+
+.donut .card {
+	float: left;
+	background-color: #2C2F33;
+	width: 300px;
+	height: 380px;
+	border-radius: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 
@@ -467,21 +453,23 @@ pre {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    width: 100%;
 	position: absolute;
 }
 
 .dashboard .icon {
 	border-radius: 50%;
-	width: 3.5%;
+	width: 37px;
 	float: left;
 }
 
-.card {
+.dashboard .card {
+	width: 700px;
+	height: 100%;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	margin-right: 320px;
-	margin-left: 320px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .dashboard .setup {
@@ -509,7 +497,6 @@ pre {
 }
 
 .dashboard .goto {
-	
 	float: right;
 	font-family: 'Open Sans', Helvetica, arial, sans-serif;
 	background-color: rgb(68, 179, 127);
@@ -953,6 +940,19 @@ pre {
     align-items: center;
 }
 
+.header3 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 650;
+	width: 520px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
 .pluginCardTitle {
 	font-weight: bold;
 	color: #99AAB5;
@@ -1177,7 +1177,7 @@ select {
 	--padding: 2px;
 	--handle-size: calc(var(--height) - var(--padding) * 2);
 	display: inline-block;
-	outline-width: 0;
+	outline-width: 0px;
 	float: right;
 }
 
@@ -1403,6 +1403,28 @@ select {
 }
 
 /*
+# SCROLLBAR
+*/
+
+::-webkit-scrollbar {
+	height: 5px;
+	width: 0px;
+}
+
+::-webkit-scrollbar-track {
+	background: #2C2F33; 
+}
+ 
+::-webkit-scrollbar-thumb {
+	background: #7289DA; 
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #99AAB5; 
+}
+
+/*
 # NAVIGATION BAR
 */
 
@@ -1555,7 +1577,11 @@ a:active .elements2Description {
 :root {
 	--shine-degree: 120deg;
 	--shine-color: rgba(255, 255, 255, 0.2);
+	
 }
+
+$anim-duration: 2;
+$anim-speed: 3;
 
 .pluginLoadingImg {
 	position: relative;
@@ -1656,6 +1682,56 @@ a:active .elements2Description {
 .pluginLoadingAnimation::before {
 	-webkit-animation: shine 2s ease-in-out infinite;
 		animation: shine 2s ease-in-out infinite;
+}
+
+.shineButtonGreen {
+	height: 40px;
+	width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 4px;
+	text-align: center;
+	background-color: #43b581;
+}
+
+.noShineButtonGray {
+	height: 40px;
+	width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 4px;
+	text-align: center;
+	background-color: #2C1C25;
+}
+
+.shineButtonGreen::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--shine-degree)), color-stop(transparent), color-stop(var(--shine-color)), to(transparent));
+	background: linear-gradient(var(--shine-degree), transparent, var(--shine-color), transparent);
+}
+
+#containerCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#contentCenter {
+	flex: 0 0 120px;
 }
 
 @-webkit-keyframes shine {
