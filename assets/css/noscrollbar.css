@@ -9,6 +9,10 @@
 ###################################################################################
 */
 
+html {
+	scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
 	height: 5px;
 	width: 0px;
