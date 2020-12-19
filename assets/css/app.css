@@ -12,6 +12,7 @@
 $anim-duration: 2;
 $anim-speed: 3;
 
+
 html {
 	scroll-behavior: smooth;
 }
@@ -20,9 +21,11 @@ body {
 	font-family: 'Open Sans', sans-serif, Helvetica, arial, sans-serif;
 	background-color: #23272A;
 	position: relative;
-	width: 99,99%;
 	box-sizing: border-box;
     color: rgba(255,255,255,0.7);
+	margin: none;
+	outline: none;
+	border: none;
 }
 
 pre {
@@ -35,6 +38,35 @@ pre {
 .pre {
 	margin-left: 5px;
 }
+
+/* 
+# COUNTOWN
+*/
+
+.blurple .card {
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background: linear-gradient(270deg,#e292aa,#b473f5);
+	border-radius: 6px;
+	width: 1200px;
+	height: 80px;
+}
+
+.blurple .card h1 {
+	font-size: 38px;
+	font-weight: 100;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	margin: none;
+	line-height: 80px;
+}
+
+.blurple .card strong {
+	font-weight: 800;
+}
+
 
 
 /* POPUP 1 */
@@ -250,7 +282,7 @@ pre {
 	background-color: #1a1a1a;
 	border-radius: 10px;
 	width: 323px;
-	height: 218px;
+	height: 238px;
 	float: left;
 	text-align: center;
 }
@@ -277,6 +309,116 @@ pre {
 	color: #99AAB5;
 }
 
+
+/*
+# SHARDS SECTION
+*/
+
+.shards {
+	font-family: 'Poppins', Helvetica, arial, sans-serif;
+	padding-top: 111px;
+	padding-bottom: 111px;
+	color: white;
+}
+
+.shards .title {
+    text-transform: none;
+    font-size: 38px;
+    line-height: 1.3;
+    text-align: center;
+	font-weight: bold;
+}
+
+.shards .description {
+	font-size: 19px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.8;
+	color: #ffffffb3;
+}
+
+.shards .container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 284.992px;
+	height: 50px;
+}
+
+.shards .container .shardOp {
+	border: 3px solid #43b581;
+	float: left;
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	width: 46px;
+	height: 46px;
+	line-height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.shards .container .shardNop {
+	border: 3px solid #f04747;
+	float: left;
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	width: 46px;
+	height: 46px;
+	line-height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.shards .container .shardTnop {
+	border: 3px solid YELLOW;
+	float: left;
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	width: 46px;
+	height: 46px;
+	line-height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+
+#servicesTable {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#servicesTable td, #servicesTable th {
+	border: 1px solid #43b581;
+	padding: 8px;
+
+}
+
+#servicesTable tr:nth-child(even) {
+	background-color: #23272A;
+}
+
+#servicesTable th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #43b581;
+	color: white;
+}
 
 
 /*
@@ -991,7 +1133,7 @@ pre {
 }
 
 .pluginCardFooterImg {
-	width: 20px;
+	width: 22px;
 	height: 20px;
 	float: left;
 }
@@ -1404,12 +1546,11 @@ select {
 */
 
 .footer {
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   color: white;
-   font-size: 10px;
-   text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
 }
 
 /*
@@ -1864,6 +2005,7 @@ a:active .elements2Description {
 .snowflake {
 	position: fixed;
 	top: -10%;
+	font-size: 28px;
 	z-index: 9999;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -1953,7 +2095,6 @@ a:active .elements2Description {
 	-webkit-animation-delay: 4s, 2.5s;
 	animation-delay: 4s, 2.5s;
 }
-
 
 /*
 # RESPONSIVE PAGE

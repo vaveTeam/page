@@ -60,7 +60,7 @@
 
 		<div class="pluginHead">
 			<div class="pluginTitle">Welcome Plugin</div>
-			<a class="pluginPower" href="#popup1">Disable</a>
+			<a class="pluginPower">Disable</a>
 		</div>
 		<hr class="pluginSplit">
 
@@ -76,7 +76,7 @@
 					</div>
 				</label>
 			</div>
-			<a class="pluginEditButton pluginDisabled" href="#popup1">Edit</a><br><br><br>
+			<a class="pluginEditButton" href="#welcomeMessagePopup">Edit</a><br><br><br>
 
 
 			<div class="pluginBodyTitle">Send a message when a user leaves the server</div>
@@ -90,7 +90,7 @@
 					</div>
 				</label>
 			</div>
-			<a class="pluginEditButton pluginDisabled" href="#popup1">Edit</a><br><br><br>
+			<a id="toggle_welcomeMsg()" class="pluginEditButton">Edit</a><br><br><br>
 
 
 			<div class="pluginBodyTitle">Send a private message to new users</div>
@@ -104,7 +104,7 @@
 					</div>
 				</label>
 			</div>
-			<a class="pluginEditButton pluginDisabled" href="#popup1">Edit</a><br><br><br>
+			<a id="toggle_welcomeMsg()" class="pluginEditButton">Edit</a><br><br><br>
 
 
 			<div class="pluginBodyTitle">Give a role to new users</div>
@@ -118,7 +118,7 @@
 					</div>
 				</label>
 			</div>
-			<a class="pluginEditButton pluginDisabled" href="#popup1">Edit</a>
+			<a id="toggle_welcomeMsg()" class="pluginEditButton">Edit</a>
 		</div>
 
 
@@ -154,7 +154,7 @@
 				To provide a message image type image:{content}<br>
 				To provide a message footer type footer:{content}
 				To provide a message embed color type color:{hex_color}<br><br>
-				<img style="border-radius: 10px;" src="https://vavebot.pl/assets/img/embed.png"><br><br>
+				<img style="border-radius: 10px;" src="../../../assets/img/embed.png"><br><br>
 			</div>
 			<br><br><br>
 			
@@ -162,9 +162,9 @@
 			<div class="pluginFootsTitle">How to copy someone ID?</div>
 			<div class="pluginFootsDescription">
 				To copy a user ID, role ID or channel ID, you'll need to enable Developer Tools in the Appearance tab at the bottom of the page:<br><br>
-				<img style="border-radius: 10px;" src="https://vavebot.pl/assets/img/devmode.png"><br><br>
+				<img style="border-radius: 10px;" src="../../../assets/img/devmode.png"><br><br>
 				When developer mode is enabled, you can copy the ID with a right click:<br><br>
-				<img style="border-radius: 10px;" src="https://vavebot.pl/assets/img/rightclick.png"><br><br>
+				<img style="border-radius: 10px;" src="../../../assets/img/rightclick.png"><br><br>
 			</div>
 		</div>
 		
@@ -238,18 +238,6 @@ To disable this message, first enable Welcome Message Card and type here DISABLE
 						<div class="popupInputName">Message preview</div>
 						<input class="popupButtonInput" type="submit" id="submitButton" value="Save"/>
 					</form>
-				</div>
-			</div>
-		</div>
-		<div id="popup1" class="function_overlay">
-			<div class="function">
-				<h2>Function Unavailable</h2>
-				<a class="close" href="#">&times;</a>
-				<div class="content">
-					<img width="420" height="240" src="https://vavebot.pl/assets/img/early.svg" />
-					<p>Hello there! This function is currently unavailable. Try again later...</p>
-					<div class="popupInputName">Early access</div>
-					<p>Buy early access to unlock this feature. <a href="https://vavebot.pl/donate">Click here</a></p>
 				</div>
 			</div>
 		</div>

@@ -12,7 +12,7 @@
 <!DOCTYPE HTLM>
 <html>
 	<head>
-		<title>vave - Multipurpose bot for Discord</title>
+		<title>vave - Home page</title>
 		<meta charset="UTF-8">
 		
 		<meta property="og:url" content="https://vavebot.pl/" />
@@ -20,6 +20,7 @@
 		<meta property="og:title" content="vave" />
 		<meta property="og:description" content="Multipurpose & multilanguage bot for Discord servers" />
 		<meta property="og:image" content="https://cdn.vavebot.pl/official_logo.png" />
+		<meta property="og:color" content="BLUE" />
 		<meta name="theme-color" content="BLUE" />
 		
 		<meta name="keywords" content="vave, wave, fale, discord bot, bot, discord, clyde, mee6, xenon, dyno">
@@ -46,13 +47,14 @@
 	    <div class="topnav">
 			<a href="https://vavebot.pl/"><img src="https://cdn.vavebot.pl/official_logo.png" /></a>
 			<a class="lnk active">Land</a>
-			<a class="lnk" href="#modules">Functions</a>
+			<a class="lnk" href="https://vavebot.pl/#modules">Functions</a>
 			<a class="lnk" href="https://ads.vavebot.pl/">Ads</a>
+			<a class="lnk" href="https://vavebot.pl/shards">Server Status</a>
 			<a class="lnk" href="https://vavebot.pl/support">Support Server</a>
-			<a class="lnk" style="color: GOLD;" href="donate">Donate</a>
+			<a class="lnk" style="color: GOLD;" href="https://vavebot.pl/donate">Donate</a>
 			<div class="topnav-right">
 				<a class="lnk" href="https://vavebot.pl/privacy">Privacy</a>
-				<a class="lnk" href="dashboard/">Dashboard</a>
+				<a class="lnk" href="https://vavebot.pl/dashboard/">Dashboard</a>
 			</div>
 		</div>
 		<div class="snowflakes">
@@ -87,6 +89,13 @@
 				•
 			</div>
 		</div>
+		
+		<div class="blurple">
+			<div class="card">
+				<h1>To new release: <strong id="countdown">Loading... Please wait</strong></h1>
+			</div>
+		</div>
+
 		<div class="hero">
 			<h1>Build the most professional Discord server with vave!</h1>
 			<p>Setup moderate, leveling, music, custom commands, and much more with dashboard!</p>
@@ -111,5 +120,26 @@
 		<div class="footer">
 			<p>&copy; Copyright 2020 - 2021 | vave Studios</p>
 		</div>
+
+		<script>
+			var countDownDate = new Date("Jan 1, 2021 00:00:01").getTime();
+
+			var x = setInterval(function() {
+  				var now = new Date().getTime();
+  				var distance = countDownDate - now;
+
+  				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+ 				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  				document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("countdown").innerHTML = "RELEASED!";
+				}
+			}, 1000);
+		</script>
 	</body>
 </html>
