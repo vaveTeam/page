@@ -1,4 +1,4 @@
-$(document).ready(() => { 
+$(document).ready(() => {
   let switches = {
     title: false,
     url: false,
