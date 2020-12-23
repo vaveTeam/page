@@ -15,21 +15,22 @@
 		<title>vave - Home page</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+		<meta name=application-name content="vave">
+		<meta property=og:type content=website>
 		<meta property="og:url" content="https://vavebot.pl/" />
 		<meta property="og:site_name" content="#stayathome" />
-		<meta property="og:title" content="vave" />
-		<meta property="og:description" content="Multipurpose & multilanguage bot for Discord servers" />
+		<meta property="og:title" content="vave | Land" />
+		<meta property="og:description" content="vave is a multipurpose & multilanguage bot for Discord servers. 300 guilds trusted us, trust & u." />
 		<meta property="og:image" content="https://cdn.vavebot.pl/official_logo.png" />
-		<meta property="og:color" content="BLUE" />
-		<meta name="theme-color" content="BLUE" />
+		<meta name="theme-color" content="#e292aa" />
 		
-		<meta name="keywords" content="vave, wave, fale, discord bot, bot, discord, clyde, mee6, xenon, dyno, zinebot, lambda, zine, zine bot, editbot, edit bot, vave, vavebot, zinebot.pl, zinebot.tk">
+		<meta name="keywords" content="vave, wave, fale, discord bot, bot, discord, clyde, mee6, xenon, dyno">
 		<link rel="icon" type="image/png" href="assets/img/favicon.png">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/app.css">
 		<link rel="stylesheet" href="assets/css/scrollbar.css">
+		<link rel="stylesheet" href="assets/css/snowfall.css">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-S5L6TJBWGJ"></script>
 		<script>
@@ -41,10 +42,7 @@
 		</script>
 	</head>
 	<body>
-		<!--<div class="noresponsive backgnd">
-			<h1 class="noresponsiveH1">Huh... This page isn't available right now!</h1>
-			<p class="noresponsiveP">Try again later... (or use computer)</p>
-		</div>-->
+
 	    <div class="topnav">
 			<a href="https://vavebot.pl/"><img src="https://cdn.vavebot.pl/official_logo.png" /></a>
 			<a class="lnk active">Land</a>
@@ -58,12 +56,14 @@
 				<a class="lnk" href="https://vavebot.pl/dashboard/">Dashboard</a>
 			</div>
 		</div>
+
 		<div class="topnav-mobile">
 			<a href="https://vavebot.pl/"><img src="https://cdn.vavebot.pl/official_logo.png" /></a>
-			<a class="lnk active">Land</a>
+			<a class="lnk" href="https://vavebot.pl/donate">Donate</a>
 			<a class="lnk" href="https://vavebot.pl/support">Support</a>
-			<a class="lnk" href="https://vavebot.pl/support">Dashboard</a>
+			<a class="lnk" href="https://vavebot.pl/dashboard/">Dashboard</a>
 		</div>
+
 
 		<div class="snowflakes">
 			<div class="snowflake">
@@ -98,10 +98,8 @@
 			</div>
 		</div>
 		
-		<div class="blurple">
-			<div class="card">
-				<h1>To new release: <strong id="countdown">loading...</strong></h1>
-			</div>
+		<div class="notification1">
+			<h1>To new release: <strong id="countdown">loading...</strong></h1>
 		</div>
 
 		<div class="hero">
@@ -129,25 +127,10 @@
 			<p>&copy; Copyright 2020 - 2021 | vave Studios</p>
 		</div>
 
-		<script>
-			var countDownDate = new Date("Jan 1, 2021 00:00:01").getTime();
 
-			var x = setInterval(function() {
-  				var now = new Date().getTime();
-  				var distance = countDownDate - now;
-
-  				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
- 				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-  				document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-  
-				if (distance < 0) {
-					clearInterval(x);
-					document.getElementById("countdown").innerHTML = "RELEASED!";
-				}
-			}, 1000);
-		</script>
+		<script src="scripts/load.js"></script>
+		<script src="scripts/link_newindow.js"></script>
+		<script src="scripts/navbar.js"></script>
+		<script src="scripts/timer.js"></script>
 	</body>
 </html>

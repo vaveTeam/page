@@ -39,11 +39,19 @@ pre {
 	margin-left: 5px;
 }
 
-/* 
-# COUNTOWN
+
+
+/*
+# LOAD POPUP ##000
 */
 
-.blurple .card {
+
+
+/* 
+# COUNTOWN ##001
+*/
+
+.notification1 {
 	margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;
@@ -53,7 +61,7 @@ pre {
 	height: 80px;
 }
 
-.blurple .card h1 {
+.notification1 h1 {
 	font-size: 38px;
 	font-weight: 100;
 	color: white;
@@ -63,15 +71,17 @@ pre {
 	line-height: 80px;
 }
 
-.blurple .card strong {
+.notification1 strong {
 	font-weight: 800;
 }
 
 
 
-/* POPUP 1 */
+/*
+# POPUP 1 ##002
+*/
 
-.function_overlay {
+.popup1_overlay {
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -83,32 +93,40 @@ pre {
 	opacity: 0;
 }
 
-.function_overlay:target {
+.popup1_overlay:target {
 	visibility: visible;
 	opacity: 1;
 }
 
-.function {
-	margin: 70px auto;
+.popup1 {
+	margin: 2% auto;
 	padding: 20px;
 	background: #2C2F33;
 	border-radius: 5px;
 	width: 420px;
-	height: 420px;
+	height: 160px;
 	position: relative;
 	transition: all 0.4s ease-in-out;
 }
 
-.function h2 {
+.popup1 hr {
+	border: 1px solid #717477;
+	margin: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+}
+
+.popup1 h2 {
 	margin-top: 0;
 	color: #fff;
 	font-family: Tahoma, Arial, sans-serif;
 }
 
-.function .close {
+.popup1 .close {
 	position: absolute;
-	top: 20px;
-	right: 30px;
+	top: 14px;
+	right: 18px;
 	transition: all 200ms;
 	font-size: 30px;
 	font-weight: bold;
@@ -116,38 +134,45 @@ pre {
 	color: #fff;
 }
 
-.function .close:hover {
+.popup1 .close:hover {
 	color: RED;
 }
 
-.function .content {
+.popup1 .content {
 	position: absolute;
 	max-height: 510px;
 	overflow: auto;
 	width: 420px;
 	height: 400px;
+	color: white;
 	margin-left: auto;
 	margin-right: auto;
-	
 }
 
-.functionInputName {
+.popup1 .footer {
+	bottom: 20px;
+	left: 20px;
+}
+
+.popup1 .shineBut {
+	height: 35px;
+	width: 100px;
+	line-height: 35px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	font-size: 14px;
 	font-weight: bold;
-	color: #99AAB5;
-	font-size: 12px;
-	margin-bottom: 2px;
-	text-transform: uppercase;
-	margin-left: 1px;
+	border-radius: 4px;
+	text-align: center;
+	background-color: #43b581;
 }
-
-
-
 
 
 
 
 /*
-# HERO SECTION
+# HERO SECTION ##003
 */
 
 .hero {
@@ -243,7 +268,7 @@ pre {
 }
 
 /*
-# THANKS SECTION
+# THANKS SECTION ##004
 */
 
 .ty {
@@ -311,7 +336,7 @@ pre {
 
 
 /*
-# SHARDS SECTION
+# SHARDS SECTION ##005
 */
 
 .shards {
@@ -422,7 +447,7 @@ pre {
 
 
 /*
-# EASTER SECTION
+# EASTER SECTION ##006
 */
 
 .easter {
@@ -493,7 +518,7 @@ pre {
 
 
 /*
-# DONUT SECTION
+# DONUT SECTION ##007
 */
 
 .donut {
@@ -557,7 +582,7 @@ pre {
 
 
 /*
-# TERMS SECTION
+# TERMS SECTION ##008
 */
 
 .terms {
@@ -579,7 +604,7 @@ pre {
 
 
 /*
-# SERVER SELECT SECTION
+# SERVER SELECT SECTION ##009
 */
 
 .serverSelect {
@@ -674,7 +699,7 @@ pre {
 }
 
 /*
-# CARDS SECTION
+# CARDS SECTION ##010
 */
 
 .cards h1 {
@@ -709,7 +734,7 @@ pre {
 
 
 /*
-# ADD SECTION
+# ADD SECTION ##011
 */
 
 .add {
@@ -764,15 +789,143 @@ pre {
 
 
 /*
-# WELCOME PLUGIN SECTION
+# PLUGIN SECTION ##012
 */
 
+.modules {
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+.modules hr {
+	border: 1px slim #99AAB5;
+}
+
+.modules .head {
+	width: 1200px;
+	height: auto;
+}
+
+.modules .title {
+	color: white;
+	font-weight: 700;
+	font-size: 26px;
+}
+
+.modules .commands {
+	margin-top: 15px;
+	margin-bottom: 200px;
+	width: 1200px;
+}
+
+.modules .commands .cmd {
+	background-color: #2C2F33;
+	border-radius: 10px;
+	width: 391.5px;
+	height: 46px;
+	float: left;
+	margin: 3px;
+}
+
+
+.modules .commands .cmd h1 {
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-size: 24px;
+	font-weight: 100;
+}
+
+.modules .commands .cmd p {
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-size: 15px;
+	font-weight: 200;
+}
+
+.modules .commands .cmd .cmdHR {
+	margin-top: 46px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.modules .commands .cmd .form {
+	float: right;
+	margin-top: 12px;
+	margin-right: 10px;
+}
+
+.modules .body .logs {
+	width: 1065px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modules .body .logs .f1 {
+	margin-top: 5px;
+	margin-bottom: 25px;
+	background-color: #2C2F33;
+	border-radius: 10px;
+	padding: 20px;
+	width: 1024px;
+	height: 20px;
+}
+
+.modules .body .logs .f2 {
+	margin-top: 5px;
+	margin-bottom: 25px;
+	background-color: #2C2F33;
+	border-radius: 10px;
+	padding: 20px;
+	width: 1024px;
+	height: 60px;
+}
+
+.modules .body .logs .f3 {
+	margin-top: 5px;
+	margin-bottom: 25px;
+	background-color: #2C2F33;
+	border-radius: 10px;
+	padding: 20px;
+	width: 1024px;
+	height: 20px;
+}
+
+.modules .body .logs .f4 {
+	margin-top: 5px;
+	margin-bottom: 25px;
+	background-color: #2C2F33;
+	border-radius: 10px;
+	padding: 20px;
+	width: 1024px;
+	height: 20px;
+}
+
+.modules .body .logs input {
+	margin-left: 42px;
+	margin-right: 1px;
+	margin-bottom: 15px;
+}
+
+.modules .body .logs select {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	width: 1064px;
+	padding: 16px 20px;
+	border: 1px solid #2C2F33;
+	border-radius: 10px;
+	background-color: #2C2F33;
+	color: white;
+}
 
 
 
 /*
-# MANAGE SERVER SECTION
+# MANAGE SERVER SECTION ##013
 */
 
 .box1 {
@@ -898,7 +1051,7 @@ pre {
 
 
 /*
-# FOOTER SECTION
+# FOOTER SECTION ##014
 */
 
 .footer {
@@ -910,7 +1063,7 @@ pre {
 }
 
 /*
-# SCROLLBAR
+# SCROLLBAR ##015
 */
 
 ::-webkit-scrollbar {
@@ -932,7 +1085,7 @@ pre {
 }
 
 /*
-# NAVIGATION BAR
+# NAVIGATION BAR ##016
 */
 
 .topnav {
@@ -1030,7 +1183,7 @@ pre {
 
 
 /*
-# OTHER
+# OTHER ##017
 */
 
 .right-pos {
@@ -1042,7 +1195,7 @@ pre {
 }
 
 /*
-# ICONS
+# ICONS ##018
 */
 
 .icodcstat {
@@ -1083,7 +1236,7 @@ pre {
 
 
 /*
-# NO RESPONSIVE
+# NO RESPONSIVE ##019
 */
 
 .noresponsiveH1 {
@@ -1125,8 +1278,14 @@ a:active .elements2Description {
 
 
 
+
+
+
+
+
+
 /*
-# SHINE ANIMATION EFFECT by wnm210 (available on codepen)
+# SHINE ANIMATION EFFECT by wnm210 (available on codepen)  ##020
 # https://codepen.io/wnm210/pen/qBaBKbr
 */
 
@@ -1352,8 +1511,113 @@ a:active .elements2Description {
 	margin-bottom: 25px;
 }
 
+
+
+
+
 /*
-# HEADERS SECTION
+# TOGGLES FROM CODEPEN (wcale nie jest tak ze mi sie nie chcialo) ##024
+# https://codepen.io/aaroniker/pen/ZEYoxEY
+*/
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+	input[type='checkbox'] {
+	  --active: #43B581;
+	  --active-inner: #fff;
+	  --border: #99AAB5;
+	  --background: #2C2F33;
+	  --disabled: #2C2F33;
+	  --disabled-inner: #2C2F33;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  height: 21px;
+	  outline: none;
+	  display: inline-block;
+	  vertical-align: top;
+	  position: relative;
+	  margin: 0;
+	  cursor: pointer;
+	  border: 1px solid var(--bc, var(--border));
+	  background: var(--b, var(--background));
+	  -webkit-transition: background .3s, border-color .3s, box-shadow .2s;
+	  transition: background .3s, border-color .3s, box-shadow .2s;
+	}
+	input[type='checkbox']:after {
+	  content: '';
+	  display: block;
+	  left: 0;
+	  top: 0;
+	  position: absolute;
+	  -webkit-transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+	  transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+	  transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+	  transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+	}
+	input[type='checkbox']:checked {
+	  --b: var(--active);
+	  --bc: var(--active);
+	  --d-o: .3s;
+	  --d-t: .6s;
+	  --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+	}
+	input[type='checkbox']:disabled {
+	  --b: var(--disabled);
+	  cursor: not-allowed;
+	  opacity: .9;
+	}
+	input[type='checkbox']:disabled:checked {
+	  --b: var(--disabled-inner);
+	  --bc: var(--border);
+	}
+	input[type='checkbox']:disabled + label {cursor: not-allowed;}
+	input[type='checkbox']:hover:not(:checked):not(:disabled) {--bc: var(--border-hover);}
+	input[type='checkbox']:focus {box-shadow: 0 0 0 var(--focus);}
+	input[type='checkbox']:not(.switch) {width: 21px;}
+	input[type='checkbox']:not(.switch):after {opacity: var(--o, 0);}
+	input[type='checkbox']:not(.switch):checked {--o: 1;}
+  
+	input[type='checkbox']:not(.switch) {
+	  border-radius: 50%;
+	}
+	input[type='checkbox']:not(.switch):after {
+	  width: 4px;
+	  height: 8px;
+	  border: 2px solid var(--active-inner);
+	  border-top: 0;
+	  border-left: 0;
+	  left: 7px;
+	  top: 4px;
+	  -webkit-transform: rotate(var(--r, 20deg));
+			  transform: rotate(var(--r, 20deg));
+	}
+	input[type='checkbox']:not(.switch):checked {--r: 43deg;}
+	input[type='checkbox'].switch {
+	  width: 38px;
+	  border-radius: 11px;
+	}
+	input[type='checkbox'].switch:after {
+	  left: 2px;
+	  top: 2px;
+	  border-radius: 50%;
+	  width: 15px;
+	  height: 15px;
+	  background: var(--ab, var(--border));
+	  -webkit-transform: translateX(var(--x, 0));
+			  transform: translateX(var(--x, 0));
+	}
+	input[type='checkbox'].switch:checked {
+	  --ab: var(--active-inner);
+	  --x: 17px;
+	}
+	input[type='checkbox'].switch:disabled:not(:checked):after {opacity: .6;}
+  }
+
+
+
+
+
+/*
+# HEADERS SECTION ##021
 */
 
 .header1 {
@@ -1398,153 +1662,11 @@ a:active .elements2Description {
 
 
 /*
-# ŚNIEGU CI SIĘ ZACHCIAŁO? - SNOW SECTION
+# ŚNIEGU CI SIĘ ZACHCIAŁO? - SNOW SECTION ##022
 */
 
-/* customizable snowflake styling */
-
-.snowflake {
-	color: #fff;
-	font-size: 1em;
-	font-family: Arial, sans-serif;
-}
-
-@-webkit-keyframes snowflakes-fall {
-	0% {
-	  top: -10%;
-	}
-	100% {
-	  top: 100%;
-	}
-}
-
-@-webkit-keyframes snowflakes-shake {
-	0%,
-	100% {
-	  -webkit-transform: translateX(0);
-	  transform: translateX(0);
-	}
-	50% {
-	  -webkit-transform: translateX(80px);
-	  transform: translateX(80px);
-	}
-}
-
-@keyframes snowflakes-fall {
-	0% {
-	  top: -10%;
-	}
-	100% {
-	  top: 100%;
-	}
-}
-
-@keyframes snowflakes-shake {
-	0%,
-	100% {
-	  transform: translateX(0);
-	}
-	50% {
-	  transform: translateX(80px);
-	}
-}
-  
-.snowflake {
-	position: fixed;
-	top: -10%;
-	font-size: 28px;
-	z-index: 9999;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	cursor: default;
-	-webkit-animation-name: snowflakes-fall, snowflakes-shake;
-	-webkit-animation-duration: 10s, 3s;
-	-webkit-animation-timing-function: linear, ease-in-out;
-	-webkit-animation-iteration-count: infinite, infinite;
-	-webkit-animation-play-state: running, running;
-	animation-name: snowflakes-fall, snowflakes-shake;
-	animation-duration: 10s, 3s;
-	animation-timing-function: linear, ease-in-out;
-	animation-iteration-count: infinite, infinite;
-	animation-play-state: running, running;
-}
-  
-.snowflake:nth-of-type(0) {
-	left: 1%;
-	-webkit-animation-delay: 0s, 0s;
-	animation-delay: 0s, 0s;
-}
-  
-.snowflake:nth-of-type(1) {
-	left: 10%;
-	-webkit-animation-delay: 1s, 1s;
-	animation-delay: 1s, 1s;
-}
-  
-.snowflake:nth-of-type(2) {
-	left: 20%;
-	-webkit-animation-delay: 6s, 0.5s;
-	animation-delay: 6s, 0.5s;
-}
-  
-.snowflake:nth-of-type(3) {
-	left: 30%;
-	-webkit-animation-delay: 4s, 2s;
-	animation-delay: 4s, 2s;
-}
-  
-.snowflake:nth-of-type(4) {
-	left: 40%;
-	-webkit-animation-delay: 2s, 2s;
-	animation-delay: 2s, 2s;
-}
-  
-.snowflake:nth-of-type(5) {
-	left: 50%;
-	-webkit-animation-delay: 8s, 3s;
-	animation-delay: 8s, 3s;
-}
-  
-.snowflake:nth-of-type(6) {
-	left: 60%;
-	-webkit-animation-delay: 6s, 2s;
-	animation-delay: 6s, 2s;
-}
-  
-.snowflake:nth-of-type(7) {
-	left: 70%;
-	-webkit-animation-delay: 2.5s, 1s;
-	animation-delay: 2.5s, 1s;
-}
-  
-.snowflake:nth-of-type(8) {
-	left: 80%;
-	-webkit-animation-delay: 1s, 0s;
-	animation-delay: 1s, 0s;
-}
-  
-.snowflake:nth-of-type(9) {
-	left: 90%;
-	-webkit-animation-delay: 3s, 1.5s;
-	animation-delay: 3s, 1.5s;
-}
-  
-.snowflake:nth-of-type(10) {
-	left: 25%;
-	-webkit-animation-delay: 2s, 0s;
-	animation-delay: 2s, 0s;
-}
-  
-.snowflake:nth-of-type(11) {
-	left: 65%;
-	-webkit-animation-delay: 4s, 2.5s;
-	animation-delay: 4s, 2.5s;
-}
-
 /*
-# RESPONSIVE PAGE
+# RESPONSIVE PAGE ##023
 */
 
 
@@ -1554,11 +1676,11 @@ a:active .elements2Description {
 	.snowflakes {display: none;}
 	.topnav {display:none;}
 	.topnav-mobile {display:block;}
-	.blurple .card {
+	.notification1 {
 		width: 100%;
 		height: 50px;
 	}
-	.blurple .card h1 {
+	.notification1 h1 {
 		font-size: 20px;
 		line-height: 50px;
 	}
