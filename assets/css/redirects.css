@@ -14,6 +14,10 @@
     border: none;
 }
 
+img {
+    border-radius: 4px;
+}
+
 body {
     font-family: 'Open Sans', sans-serif, Helvetica, arial, sans-serif;
     background: #2C2F33;
@@ -77,8 +81,16 @@ body {
     border-radius: 5px;
     width: 648px;
     height: 68px;
-    background: url(../ads/sparfy2.png);
+    background: transparent;
     cursor: pointer;
+}
+
+.sparfy {
+    background: url(../ads/sparfy2.png);
+}
+
+.hurizv {
+    background: url(../ads/hurizv.png);
 }
 
 .dyk1 {
