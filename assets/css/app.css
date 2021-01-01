@@ -48,7 +48,7 @@ pre {
 
 
 /* 
-# COUNTOWN ##001
+# NOTIFICATIONS ##001
 */
 
 .notification1 {
@@ -58,20 +58,73 @@ pre {
 	background: linear-gradient(270deg,#e292aa,#b473f5);
 	border-radius: 6px;
 	width: 100%;
-	height: 80px;
+	height: 40px;
 }
 
 .notification1 h1 {
-	font-size: 38px;
-	font-weight: 100;
+	font-size: 20px;
+	font-weight: 400;
 	color: white;
 	text-align: center;
 	vertical-align: middle;
 	margin: none;
-	line-height: 80px;
+	line-height: 40px;
 }
 
 .notification1 strong {
+	font-weight: 800;
+}
+
+
+
+.notification-red {
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background: linear-gradient(270deg,#db0000,#ed4e4e);
+	border-radius: 6px;
+	width: 100%;
+	height: 40px;
+}
+
+.notification-red h1 {
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	margin: none;
+	line-height: 40px;
+}
+
+.notification-red strong {
+	font-weight: 800;
+}
+
+
+
+
+.notification-green {
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background: linear-gradient(270deg,#43b581,#358c65);
+	border-radius: 6px;
+	width: 100%;
+	height: 40px;
+}
+
+.notification-green h1 {
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	margin: none;
+	line-height: 40px;
+}
+
+.notification-green strong {
 	font-weight: 800;
 }
 
@@ -800,7 +853,7 @@ pre {
 }
 
 .modules hr {
-	border: 1px slim #99AAB5;
+	border: 1px medium rgba(255, 255, 255, 0.1);;
 }
 
 .modules .head {
@@ -826,6 +879,7 @@ pre {
 	width: 391.5px;
 	height: 46px;
 	float: left;
+	line-height: 33px;
 	margin: 3px;
 }
 
@@ -835,8 +889,8 @@ pre {
 	margin-left: 10px;
 	margin-top: 5px;
 	margin-bottom: 0px;
-	font-size: 24px;
-	font-weight: 100;
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .modules .commands .cmd p {
@@ -857,6 +911,7 @@ pre {
 	float: right;
 	margin-top: 12px;
 	margin-right: 10px;
+	line-height: 30px;
 }
 
 .modules .body .logs {
@@ -922,6 +977,45 @@ pre {
 	color: white;
 }
 
+.settings {
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.settings input {
+	margin-left: 42px;
+	margin-right: 1px;
+	margin-bottom: 15px;
+}
+
+.settings select {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	width: 100%;
+	padding: 16px 20px;
+	border: none;
+	border-radius: 10px;
+	background-color: #2C2F33;
+	color: white;
+}
+
+.settings input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	background-color: rgb(43, 47, 51);
+	border-radius: 10px;
+	color: white;
+}
+
+.settings label img {
+	width: 85%;
+	height: auto;
+}
 
 
 /*
@@ -1521,28 +1615,7 @@ a:active .elements2Description {
 */
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
-	input[type='checkbox'] {
-	  --active: #43B581;
-	  --active-inner: #fff;
-	  --border: #99AAB5;
-	  --background: #2C2F33;
-	  --disabled: #2C2F33;
-	  --disabled-inner: #2C2F33;
-	  -webkit-appearance: none;
-	  -moz-appearance: none;
-	  height: 21px;
-	  outline: none;
-	  display: inline-block;
-	  vertical-align: top;
-	  position: relative;
-	  margin: 0;
-	  cursor: pointer;
-	  border: 1px solid var(--bc, var(--border));
-	  background: var(--b, var(--background));
-	  -webkit-transition: background .3s, border-color .3s, box-shadow .2s;
-	  transition: background .3s, border-color .3s, box-shadow .2s;
-	}
-	input[type='checkbox']:after {
+	input[type=checkbox]:after, input[type=radio]:after {
 	  content: '';
 	  display: block;
 	  left: 0;
@@ -1553,33 +1626,34 @@ a:active .elements2Description {
 	  transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
 	  transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
 	}
-	input[type='checkbox']:checked {
+	input[type=checkbox]:checked, input[type=radio]:checked {
 	  --b: var(--active);
 	  --bc: var(--active);
 	  --d-o: .3s;
 	  --d-t: .6s;
 	  --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
 	}
-	input[type='checkbox']:disabled {
+	input[type=checkbox]:disabled, input[type=radio]:disabled {
 	  --b: var(--disabled);
 	  cursor: not-allowed;
 	  opacity: .9;
 	}
-	input[type='checkbox']:disabled:checked {
+	input[type=checkbox]:disabled:checked, input[type=radio]:disabled:checked {
 	  --b: var(--disabled-inner);
 	  --bc: var(--border);
 	}
-	input[type='checkbox']:disabled + label {cursor: not-allowed;}
-	input[type='checkbox']:hover:not(:checked):not(:disabled) {--bc: var(--border-hover);}
-	input[type='checkbox']:focus {box-shadow: 0 0 0 var(--focus);}
-	input[type='checkbox']:not(.switch) {width: 21px;}
-	input[type='checkbox']:not(.switch):after {opacity: var(--o, 0);}
-	input[type='checkbox']:not(.switch):checked {--o: 1;}
-  
-	input[type='checkbox']:not(.switch) {
+	input[type=checkbox]:disabled + label, input[type=radio]:disabled + label {cursor: not-allowed;}
+	input[type=checkbox]:hover:not(:checked):not(:disabled), input[type=radio]:hover:not(:checked):not(:disabled) {--bc: var(--border-hover);}
+	input[type=checkbox]:focus, input[type=radio]:focus {box-shadow: 0 0 0 var(--focus);}
+	input[type=checkbox]:not(.switch), input[type=radio]:not(.switch) {width: 21px;}
+	input[type=checkbox]:not(.switch):after, input[type=radio]:not(.switch):after {opacity: var(--o, 0);}
+	input[type=checkbox]:not(.switch):checked, input[type=radio]:not(.switch):checked {--o: 1;}
+
+	input[type=checkbox]:not(.switch) {
 	  border-radius: 50%;
 	}
-	input[type='checkbox']:not(.switch):after {
+
+	input[type=checkbox]:not(.switch):after {
 	  width: 4px;
 	  height: 8px;
 	  border: 2px solid var(--active-inner);
@@ -1590,11 +1664,13 @@ a:active .elements2Description {
 	  -webkit-transform: rotate(var(--r, 20deg));
 			  transform: rotate(var(--r, 20deg));
 	}
+
 	input[type='checkbox']:not(.switch):checked {--r: 43deg;}
 	input[type='checkbox'].switch {
 	  width: 38px;
 	  border-radius: 11px;
 	}
+
 	input[type='checkbox'].switch:after {
 	  left: 2px;
 	  top: 2px;
@@ -1605,12 +1681,135 @@ a:active .elements2Description {
 	  -webkit-transform: translateX(var(--x, 0));
 			  transform: translateX(var(--x, 0));
 	}
+
 	input[type='checkbox'].switch:checked {
 	  --ab: var(--active-inner);
 	  --x: 17px;
 	}
+
 	input[type='checkbox'].switch:disabled:not(:checked):after {opacity: .6;}
   }
+
+
+
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+	input[type=checkbox], input[type=radio] {
+		--active: #43B581;
+		--active-inner: #fff;
+		--border: #99AAB5;
+		--background: #2C2F33;
+		--disabled: #2C2F33;
+		--disabled-inner: #2C2F33;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		height: 21px;
+		outline: none;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		margin: 0;
+		cursor: pointer;
+		border: 1px solid var(--bc, var(--border));
+		background: var(--b, var(--background));
+		-webkit-transition: background .3s, border-color .3s, box-shadow .2s;
+		transition: background .3s, border-color .3s, box-shadow .2s;
+	}
+
+	input[type=checkbox]:after, input[type=radio]:after {
+		content: "";
+		display: block;
+		left: 0;
+		top: 0;
+		position: absolute;
+		transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+	}
+
+	input[type=checkbox]:checked, input[type=radio]:checked {
+		--b: var(--active);
+		--bc: var(--active);
+		--d-o: .3s;
+		--d-t: .6s;
+		--d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+	}
+
+	input[type=checkbox]:disabled, input[type=radio]:disabled {
+		--b: var(--disabled);
+		cursor: not-allowed;
+		opacity: 0.9;
+	}
+
+	input[type=checkbox]:disabled:checked, input[type=radio]:disabled:checked {
+		--b: var(--disabled-inner);
+		--bc: var(--border);
+	}
+
+	input[type=checkbox]:disabled + label, input[type=radio]:disabled + label {cursor: not-allowed;}
+	input[type=checkbox]:hover:not(:checked):not(:disabled), input[type=radio]:hover:not(:checked):not(:disabled) {--bc: var(--border-hover);}
+	input[type=checkbox]:focus, input[type=radio]:focus {box-shadow: 0 0 0 var(--focus);}
+	input[type=checkbox]:not(.switch), input[type=radio]:not(.switch) {width: 21px;}
+	input[type=checkbox]:not(.switch):after, input[type=radio]:not(.switch):after {opacity: var(--o, 0);}
+	input[type=checkbox]:not(.switch):checked, input[type=radio]:not(.switch):checked {--o: 1;}
+
+	input[type=checkbox] + label, input[type=radio] + label {
+		font-size: 14px;
+		line-height: 21px;
+		display: inline-block;
+		vertical-align: top;
+		cursor: pointer;
+		margin-left: 4px;
+	}
+
+	input[type=checkbox]:not(.switch) {border-radius: 50%;}
+
+	input[type=checkbox]:not(.switch):after {
+		width: 4px;
+		height: 8px;
+		border: 2px solid var(--active-inner);
+		border-top: 0;
+		border-left: 0;
+		left: 7px;
+		top: 4px;
+		-webkit-transform: rotate(var(--r, 20deg));
+				transform: rotate(var(--r, 20deg));
+	}
+
+	input[type=checkbox]:not(.switch):checked {--r: 43deg;}
+
+	input[type=checkbox].switch {
+		width: 38px;
+		border-radius: 11px;
+	}
+
+	input[type=checkbox].switch:after {
+		left: 2px;
+		top: 2px;
+		border-radius: 50%;
+		width: 15px;
+		height: 15px;
+		background: var(--ab, var(--border));
+		transform: translateX(var(--x, 0));
+	}
+
+	input[type=checkbox].switch:checked {
+		--ab: var(--active-inner);
+		--x: 17px;
+	}
+
+	input[type=checkbox].switch:disabled:not(:checked):after {opacity: 0.6;}
+	input[type=radio] {border-radius: 50%;}
+
+	input[type=radio]:after {
+		width: 19px;
+		height: 19px;
+		border-radius: 50%;
+		background: var(--active-inner);
+		opacity: 0;
+		transform: scale(var(--s, 0.7));
+	}
+
+	input[type=radio]:checked {--s: .5;}
+}
 
 
 
@@ -1660,13 +1859,92 @@ a:active .elements2Description {
     align-items: center;
 }
 
+.header4 {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header5 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
 
 /*
-# ŚNIEGU CI SIĘ ZACHCIAŁO? - SNOW SECTION ##022
+# TIP SECTION ##022
 */
 
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 210px;
+	background-color: #2C2F33;
+	color: #fff;
+	text-transform: none;
+	font-weight: 400;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+
 /*
-# RESPONSIVE PAGE ##023
+# ICONS ##023
+*/
+
+.icon-new {
+	background-color: rgb(68, 179, 127);
+	border-radius: 15px;
+	width: 44px;
+	height: 22px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 10px;
+	text-align: center;
+	line-height: 21px;
+}
+
+.icon-beta {
+	background-color: #7289DA;
+	border-radius: 15px;
+	width: 46px;
+	height: 22px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 10px;
+	text-align: center;
+	line-height: 21px;
+}
+
+/*
+# RESPONSIVE PAGE ##024
 */
 
 
@@ -1678,12 +1956,21 @@ a:active .elements2Description {
 	.topnav-mobile {display:block;}
 	.notification1 {
 		width: 100%;
-		height: 50px;
+		height: 45px;
 	}
 	.notification1 h1 {
-		font-size: 20px;
-		line-height: 50px;
+		font-size: 19px;
+		line-height: 45px;
 	}
+	.notification-red {
+		width: 100%;
+		height: 45px;
+	}
+	.notification-red h1 {
+		font-size: 19px;
+		line-height: 45px;
+	}
+	.responsive-info {display: block;}
 	.hero {
 		padding-top: 120px;
 		padding-bottom: 200px;
@@ -1706,6 +1993,7 @@ a:active .elements2Description {
 
 @media screen and (min-width: 800px) {
 	.topnav-mobile {display:none;}
+	.responsive-info {display:none;}
 }
 
 
