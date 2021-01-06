@@ -18,18 +18,18 @@
 		<meta property=og:type content=website>
 		<meta property="og:url" content="https://vavebot.pl/" />
 		<meta property="og:site_name" content="#stayathome" />
-		<meta property="og:title" content="vave | Select server" />
+		<meta property="og:title" content="vave | Dashboard" />
 		<meta property="og:description" content="Multipurpose & multilanguage bot for Discord servers" />
 		<meta property="og:image" content="https://cdn.vavebot.pl/official_logo.png" />
 		<meta name="theme-color" content="#7289DA" />
 		
 		<meta name="keywords" content="vave, wave, fale, discord bot, bot, discord, clyde, mee6, xenon, dyno">
-		<link rel="icon" type="image/png" href="../assets/img/favicon.png">
+		<link rel="icon" type="image/png" href="../../../assets/img/favicon.png">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet">
-		<link rel="stylesheet" href="../assets/css/app.css">
-		<link rel="stylesheet" href="../assets/css/scrollbar.css">
-		<link rel="stylesheet" href="../assets/css/snowfall.css">
+		<link rel="stylesheet" href="../../../assets/css/app.css">
+		<link rel="stylesheet" href="../../../assets/css/scrollbar.css">
+		<link rel="stylesheet" href="../../../assets/css/snowfall.css">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-S5L6TJBWGJ"></script>
 		<script>
@@ -44,49 +44,49 @@
 	    <div class="topnav">
 			<a href="https://vavebot.pl/"><img src="https://cdn.vavebot.pl/official_logo.png" /></a>
 			<a class="lnk" href="https://vavebot.pl/">Land</a>
-			<a class="lnk" href="https://vavebot.pl/#modules">Functions</a>
-			<a class="lnk" href="https://ads.vavebot.pl/">Ads</a>
-			<a class="lnk" href="https://vavebot.pl/shards">Server Status</a>
+			<a class="lnk active" href="https://vavebot.pl/dashboard/692107912742568007/">Plugins</a>
+			<a class="lnk" href="https://vavebot.pl/dashboard/692107912742568007/settings">Settings</a>
 			<a class="lnk" href="https://vavebot.pl/support">Support Server</a>
 			<a class="lnk" style="color: GOLD;" href="https://vavebot.pl/donate">Donate</a>
 			<div class="topnav-right">
 				<a class="lnk" href="https://vavebot.pl/privacy">Privacy</a>
-				<a class="lnk active">Dashboard</a>
+				<a class="lnk" href="https://vavebot.pl/dashboard/">Dashboard</a>
 			</div>
 		</div>
 
 		<div style="margin-top: 15px;"></div>
-		<div class="serverSelect">
-			<h1 class="serverTitle">Please select a server</h1>
-			<div class="container">
-				<div class="card">
-					<heading>
-						<img class="icon" src="https://vavebot.pl/assets/img/server_avatar.gif" />
-						<div class="title">vave Community</div>
-						<a class="button blue" href="692107912742568007/">Dashboard</a><a class="button gray" href="https://vavebot.pl/leaderboard/692107912742568007/">Leaderboard</a>
-					</heading>
-				</div>
-				<div class="card">
-					<heading>
-						<img class="icon" src="https://cdn.discordapp.com/icons/643006966897049600/51751078ff752ee553f4ac13a1c86a19.webp?size=128" />
-						<div class="title">[S1] Minecraft Sielanka (beta)</div>
-						<a class="button blue" href="643006966897049600/">Dashboard</a><a class="button gray" href="https://vavebot.pl/leaderboard/643006966897049600/">Leaderboard</a>
-					</heading>
-				</div>
+        <div class="modules">
+			<div class="head">
+				<header class="header3"><img src="../../../assets/img/icons8/games.png"><h1>&nbsp; Games&nbsp;<div class="icon-new">NEW</div></h1></header>
 			</div>
-			<h1 class="serverTitle">Setup bot to your other servers</h1>
-			<div class="container">
-				<div class="card">
-					<heading>
-						<img class="icon" src="https://cdn.discordapp.com/icons/739423997585916005/7e0a67ed4de223cf4a0a16565ad6f908.png" />
-						<div class="title">Wojownicy Wiki</div>
-						<a class="button gray" href="https://vavebot.pl/add">Setup</a>
-					</heading>
+			<hr />
+            <div class="commands">
+				<h1 class="title">Commands</h1>
+				<header class="header1">None&nbsp;<div class="tooltip"><svg name="InfoFilled" class="tooltip-3euH8y" width="16" height="16" viewBox="0 0 12 12"><path fill="currentColor" d="M6 1C3.243 1 1 3.244 1 6c0 2.758 2.243 5 5 5s5-2.242 5-5c0-2.756-2.243-5-5-5zm0 2.376a.625.625 0 110 1.25.625.625 0 010-1.25zM7.5 8.5h-3v-1h1V6H5V5h1a.5.5 0 01.5.5v2h1v1z"></path></svg>
+  			<span class="tooltiptext">This category means that the command in it can be used by everyone</span>
+		</div></header>
+				<div class="cmd">
+					<h1>.snake</h1>
+					<form class="form">
+						<input id="s1" type="checkbox" class="switch" checked>
+					</form>
 				</div>
+				<div class="cmd">
+					<h1>.pacman</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+                </div>
+                <div class="cmd">
+					<h1>.minecraft</h1>
+					<form class="form">
+						<input id="s3" type="checkbox" class="switch" checked>
+					</form>
+                </div>
 			</div>
 		</div>
-		<script src="../scripts/load.js"></script>
-		<script src="../scripts/link_newindow.js"></script>
-		<script src="../scripts/navbar.js"></script>
-	</body>
+		<script src="../../../scripts/load.js"></script>
+		<script src="../../../scripts/link_newindow.js"></script>
+		<script src="../../../scripts/navbar.js"></script>
+    </body>
 </html>
