@@ -54,25 +54,50 @@
 			</div>
 		</div>
 
+		<div class="notification-box">
+			<div class="notification --red">
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+				<h1>We are still working on our website! Tell us about the bugs <a href="https://vavebot.pl/support"><strong>here</strong></a></h1>
+			</div>
+		</div>
+
 		<div style="margin-top: 15px;"></div>
         <div class="modules">
 			<div class="head">
-				<header class="header3"><img src="../../../assets/img/icons8/record.png"><h1>&nbsp; Record</h1></header>
+				<header class="header3"><img src="../../../assets/img/icons8/custom_link.png">
+					<h1>&nbsp; Custom Link</h1>
+				</header>
 			</div>
 			<hr />
             <div class="commands">
 				<h1 class="title">Settings</h1>
-				<header class="header1">None&nbsp;</header>
+				<header class="header1">Server Short Link&nbsp;
+					<div class="tooltip">
+						<svg name="InfoFilled" class="tooltip-3euH8y" width="16" height="16" viewBox="0 0 12 12">
+							<path fill="currentColor" d="M6 1C3.243 1 1 3.244 1 6c0 2.758 2.243 5 5 5s5-2.242 5-5c0-2.756-2.243-5-5-5zm0 2.376a.625.625 0 110 1.25.625.625 0 010-1.25zM7.5 8.5h-3v-1h1V6H5V5h1a.5.5 0 01.5.5v2h1v1z"></path>
+						</svg>
+  						<span class="tooltiptext">eg. vave.gg/minecraft</span>
+					</div>
+				</header>
+				<input type="text" id="prefix" name="prefix" placeholder="%" value="minecraft" maxlength="24"/>
+				<br /><br />
+				<header class="header1">Short Link Configuration</header>
 				<div class="cmd">
-					<h1>.start-recording</h1>
+					<h1>Enable</h1>
 					<form class="form">
 						<input id="s1" type="checkbox" class="switch" checked>
 					</form>
 				</div>
 				<div class="cmd">
-					<h1>.stop-recording</h1>
+					<h1><header class="header6">Force Redirect&nbsp;&nbsp;<div class="icon-premium">PRO</div></header></h1>
 					<form class="form">
-						<input id="s2" type="checkbox" class="switch" checked>
+						<input type="checkbox" class="switch" disabled>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1><header class="header6">Background Image&nbsp;&nbsp;<div class="icon-premium">PRO</div></header></h1>
+					<form class="form">
+						<input type="checkbox" class="switch" disabled>
 					</form>
 				</div>
 			</div>
