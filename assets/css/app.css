@@ -8,7 +8,7 @@
 #                                                                                 #
 ###################################################################################
 */
-
+ 
 html {
 	scroll-behavior: smooth;
 }
@@ -392,14 +392,15 @@ pre {
 .shards .container {
 	margin-left: auto;
 	margin-right: auto;
-	width: 284.992px;
-	height: 50px;
+	width: fit-content;
+	max-width: 500px;
+	height: 60px;
 }
 
 .shards .container .shardOp {
-	border: 3px solid #43b581;
+	border: 3px solid transparent;
 	float: left;
-	color: white;
+	color: #43b581;
 	font-weight: bold;
 	font-size: 24px;
 	text-align: center;
@@ -409,13 +410,17 @@ pre {
 	border-radius: 50%;
 	text-align: center;
 	vertical-align: middle;
-	margin-right: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	transition-duration: 0.3s;
 }
+
+.shards .container .shardOp:hover {border: 3px solid #43b581;color: white;}
 
 .shards .container .shardNop {
-	border: 3px solid #f04747;
+	border: 3px solid transparent;
 	float: left;
-	color: white;
+	color: #f04747;
 	font-weight: bold;
 	font-size: 24px;
 	text-align: center;
@@ -425,13 +430,17 @@ pre {
 	border-radius: 50%;
 	text-align: center;
 	vertical-align: middle;
-	margin-right: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	transition-duration: 0.3s;
 }
 
+.shards .container .shardNop:hover {border: 3px solid #f04747;color: white;}
+
 .shards .container .shardTnop {
-	border: 3px solid YELLOW;
+	border: 3px solid transparent;
 	float: left;
-	color: white;
+	color: YELLOW;
 	font-weight: bold;
 	font-size: 24px;
 	text-align: center;
@@ -441,8 +450,12 @@ pre {
 	border-radius: 50%;
 	text-align: center;
 	vertical-align: middle;
-	margin-right: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	transition-duration: 0.3s;
 }
+
+.shards .container .shardTnop:hover {border: 3px solid YELLOW;color: white;}
 
 
 #servicesTable {
@@ -1215,7 +1228,7 @@ pre {
 	border-radius: 5px;
 	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
-	margin-right: 3px;
+	margin-right: 6px;
 }
 
 .topnav .lnk:hover {
