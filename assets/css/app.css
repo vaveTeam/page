@@ -51,7 +51,7 @@ pre {
 	margin-top: 12px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 25px;
+	margin-bottom: -2px;
 	border-radius: 5px;
 	width: 1195px;
 	transition-duration: 0.2s;
@@ -76,10 +76,6 @@ pre {
 	font-weight: 800;
 }
 
-.notification-box .--normal {background: linear-gradient(270deg,#e292aa,#b473f5);}
-.notification-box .--red {background: #ed4e4e;}
-.notification-box .--green {background: #43b581}
-  
 .notification-box .closebtn {
 	margin-left: 15px;
 	margin-right: 2px;
@@ -92,7 +88,11 @@ pre {
 	transition: 0.3s;
 	vertical-align: middle;
 }
-  
+
+.notification-box .--normal {background: linear-gradient(270deg,#e292aa,#b473f5);}
+.notification-box .--red {background: #ed4e4e;}
+.notification-box .--green {background: #43b581}
+.notification-box .bottom {margin-bottom: 25px;}
 .notification-box .closebtn:hover {color: #f3f3f3d5;}
 
 
