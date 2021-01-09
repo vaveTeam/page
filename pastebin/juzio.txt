@@ -1,7 +1,0 @@
-witam pana mixera aka juzio blondi
- 
-przeczytaj dc
-okazalo sie ze jednak ${config.token} nie dziala :/
- 
-milej pracy
-twoj przyjaciel i wspolwlasciciel, mati
