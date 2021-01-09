@@ -10,5 +10,10 @@
 */
 
 body {
+    background: #000;
+}
 
+.cat {
+    margin: auto;
+    display: block;
 }
