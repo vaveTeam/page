@@ -47,12 +47,6 @@ pre {
 # NOTIFICATIONS ##001
 */
 
-.notification-box .sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 12px;
-}
-
 .notification {
 	margin-top: 12px;
 	margin-left: auto;
@@ -93,6 +87,13 @@ pre {
 	cursor: pointer;
 	transition: 0.3s;
 	vertical-align: middle;
+}
+
+
+.notification-box-sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 12px;
 }
 
 .notification-box .--normal {background: linear-gradient(270deg,#e292aa,#b473f5);}
