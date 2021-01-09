@@ -47,6 +47,12 @@ pre {
 # NOTIFICATIONS ##001
 */
 
+.notification-box {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
 .notification {
 	margin-top: 12px;
 	margin-left: auto;
