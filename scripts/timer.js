@@ -14,5 +14,7 @@ var x = setInterval(function() {
 	if (distance < 0) {
 		clearInterval(x);
 		document.getElementById("countdown").innerHTML = "RELEASED!";
+		document.getElementById("countdown").classList.add = "--green";
+		document.getElementById("countdown").classList.remove = "--normal";
 	}
 }, 1000);
