@@ -316,22 +316,23 @@ hr {
 }
 
 .ty p {
-	font-size: 19px;
+    font-size: 19px;
     margin-top: 15px;
     margin-bottom: 40px;
     text-align: center;
     line-height: 1.8;
-	color: #ffffffb3;
+    color: #ffffffb3;
 }
 
 .ty .container {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
+	width: 1059px;
 	height: 500px;
 }
 
 .ty .card {
+	padding: 10px;
 	margin-left: 5px;
 	margin-right: 5px;
 	background-color: #1a1a1a;
