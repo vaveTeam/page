@@ -14,7 +14,7 @@
 	<head>
 		<title>vave - Home page</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 		<meta name=application-name content="vave">
 		<meta property=og:type content=website>
 		<meta property="og:url" content="https://vavebot.pl/" />
@@ -42,63 +42,30 @@
 		</script>
 	</head>
 	<body>
-
-	    <div class="topnav">
-			<a href="https://vavebot.pl/"><img src="https://cdn.vavebot.pl/official_logo.png" /></a>
+		<div class="topnav">
+			<a href="https://vavebot.pl/" ><img class="img" src="https://cdn.vavebot.pl/official_logo.png" /></a>
 			<a class="lnk active">Land</a>
 			<a class="lnk" href="https://vavebot.pl/#modules">Functions</a>
 			<a class="lnk" href="https://vavebot.pl/shards">Server Status</a>
 			<a class="lnk" href="https://vavebot.pl/support">Support Server</a>
 			<a class="lnk" style="color: GOLD;" href="https://vavebot.pl/donate">Donate</a>
 			<div class="topnav-right">
-				<a class="lnk" href="https://vavebot.pl/privacy">Privacy</a>
-				<a class="lnk" href="https://vavebot.pl/dashboard/">Dashboard</a>
+				<div class="dropdown">
+					<button class="lnk2 dropbtn">
+						<header class="header6">
+							<img class="img2" src="https://cdn.discordapp.com/avatars/406085770018029568/6055842ba388845963982b7f1ffea647.png?size=128">
+							&nbsp;!                Wcale nie Matti#2100
+						</header>
+					</button>
+					<div class="dropdown-content">
+					  <a href="https://vavebot.pl/dashboard/">Dashboard</a>
+					  <a href="https://vavebot.pl/account/">My account</a>
+					  <a href="https://vavebot.pl/account/logout">Logout</a>
+					</div>
+				  </div>
 			</div>
 		</div>
-
-		<div class="topnav-mobile">
-			<a href="https://vavebot.pl/"><img src="https://cdn.vavebot.pl/official_logo.png" /></a>
-			<a class="lnk" href="https://vavebot.pl/donate">Donate</a>
-			<a class="lnk" href="https://vavebot.pl/support">Support</a>
-			<a class="lnk" href="https://vavebot.pl/dashboard/">Dashboard</a>
-		</div>
-
-
-		<div class="snowflakes">
-			<div class="snowflake">
-				•
-			</div>
-			<div class="snowflake">
-				•
-			</div>
-			<div class="snowflake">
-				•
-			</div>
-			<div class="snowflake">
-				•
-			</div>
-			<div class="snowflake">
-				•
-			</div>
-			<div class="snowflake">
-				•
-			</div>
-			<div class="snowflake">
-				•
-			</div>
-			<div class="snowflake">
-				•
-			</div>
-			<div class="snowflake">
-				•
-			</div>
-			<div class="snowflake">
-				•
-			</div>
-		</div>
-		
 		<div class="notification-box notification-box-sticky" id="notifi-home"></div>
-
 		<div class="hero">
 			<h1>Build the most professional Discord server with vave!</h1>
 			<p>Setup moderate, leveling, music, custom commands, and much more with dashboard!</p>
@@ -123,7 +90,6 @@
 		<div class="footer">
 			<p>&copy; Copyright 2020 - 2021 | vave Studios</p>
 		</div>
-
 
 		<script src="scripts/load.js"></script>
 		<script src="scripts/link_newindow.js"></script>
