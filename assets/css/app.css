@@ -57,7 +57,7 @@ hr {
 	margin-right: auto;
 	margin-bottom: -2px;
 	border-radius: 5px;
-	width: 1195px;
+	width: 1195;
 	transition-duration: 0.2s;
 	padding: 12px;
 }
@@ -1133,6 +1133,159 @@ hr {
 .settings label img {
 	width: 85%;
 	height: auto;
+}
+
+/*
+# LEADERBOARD SECTION
+*/
+
+.leaderboard .head {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1190px;
+	background: #2f3136;
+	padding: 16px;
+	height: 201px;
+	margin-bottom: 25px;
+	border-radius: 5px;
+}
+
+.leaderboard .head img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    float: left;
+    transition-duration: 1s;
+}
+
+.leaderboard .head img:hover {
+    transform: rotate(360deg);
+}
+
+.leaderboard .head .title {
+	margin-left: 220px;
+	font-size: 52px;
+	font-weight: 800;
+	color: white;
+}
+
+.leaderboard .head .description {
+	margin-left: 220px;
+	margin-bottom: 25px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.leaderboard .head .button {
+	background: #7289DA;
+	border-radius: 5px;
+	padding: 12px 24px;
+	font-weight: bold;
+	margin-left: 20px;
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+
+.leaderboard .head .button:hover {
+	background: #4e5d96;
+}
+
+.leaderboard .body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1225px;
+}
+
+.leaderboard .body .left {
+	float: left;
+}
+
+.leaderboard .body .right {
+	float: right;
+	background: #2f3136;
+	width: 400px;
+	height: 325px;
+	border-radius: 5px;
+	padding: 16px;
+}
+
+.leaderboard .body .right .versitment {
+	border: #000 solid 0.1px;
+	background-color: #fff;
+	width: 100%;
+	height: 202px;
+	line-height: 202px;
+	text-align: center;
+	color: #99AAB5;
+}
+
+.leaderboard .body .right .rank {
+	width: 369px;
+	height: 80px;
+	background: linear-gradient(to top right, #7289DA, #2252ff);
+	padding: 16px;
+	margin-bottom: 6px;
+	border-radius: 15px;
+	transition-duration: 0.2s;
+}
+
+.leaderboard .body .right .rank:hover {
+	border-radius: 5px;
+	background: linear-gradient(to top right, #7289DA, #2252ff);
+}
+
+.leaderboard .body .right .rank .text1 {
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+}
+
+.leaderboard .body .right .rank .text2 {
+	font-size: 17px;
+	font-weight: 500;
+	text-align: center;
+	margin-top: 12px;
+}
+
+.leaderboard .body .right .rank img {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	border: white solid 1px;
+}
+
+.leaderboard .body .fs {
+	width: 775px;
+	background: #2f3136;
+	margin-bottom: 10px;
+	border-radius: 60px;
+	transition-duration: 0.2s;
+}
+
+.leaderboard .body .fs:hover{
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	width: 755px;
+	background: #222327;
+}
+
+.leaderboard .body .fs .title {
+	color: white;
+	font-size: 21px;
+	font-weight: bold;
+	float: left;
+}
+
+.leaderboard .body .fs strong {
+	float: left;
+	color: #99AAB5;
+	font-size: 18px;
+}
+
+.leaderboard .body .fs img {
+	border-radius: 50%;
+	width: 80px;
+	margin-right: 20px;
 }
 
 /*
