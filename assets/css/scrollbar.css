@@ -23,10 +23,10 @@ html {
 }
  
 ::-webkit-scrollbar-thumb {
-	background: #7289DA; 
+	background: linear-gradient(to top, #7289DA, #c1ffe5);
 	border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #99AAB5; 
+	background: linear-gradient(to top, #7289DA, #c1ffe5);
 }
