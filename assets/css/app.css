@@ -8,7 +8,7 @@
 #                                                                                 #
 ###################################################################################
 */
- 
+
 html {
 	scroll-behavior: smooth;
 }
@@ -22,6 +22,11 @@ body {
 	margin: none;
 	outline: none;
 	border: none;
+	filter: blur(0px);
+}
+
+.blru {
+	filter: blur(50px);
 }
 
 pre {

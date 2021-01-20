@@ -1,0 +1,331 @@
+<!--
+###################################################################################
+#                                  Copyright 2020                                 #
+#                                wnm210 & vave Team                               #
+#                                                                                 #
+#                                                                                 # 
+#                                only for bigg boys                               #
+#                                                                                 #
+###################################################################################
+-->
+
+<!DOCTYPE HTLM>
+<html>
+	<head>
+		<title>vave – Dashboard</title>
+		<meta charset="UTF-8">
+		<meta name=application-name content="vave">
+		<meta property=og:type content=website>
+		<meta property="og:url" content="https://vavebot.pl/" />
+		<meta property="og:site_name" content="#stayathome" />
+		<meta property="og:title" content="vave | Dashboard" />
+		<meta property="og:description" content="Multipurpose & multilanguage bot for Discord servers" />
+		<meta property="og:image" content="https://cdn.vavebot.pl/official_logo.png" />
+		<meta name="theme-color" content="#7289DA" />
+		
+		<meta name="keywords" content="vave, wave, fale, discord bot, bot, discord, clyde, mee6, xenon, dyno">
+		<link rel="icon" type="image/png" href="../../../assets/img/favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet">
+		<link rel="stylesheet" href="../../../assets/css/app.css">
+		<link rel="stylesheet" href="../../../assets/css/scrollbar.css">
+		<link rel="stylesheet" href="../../../assets/css/snowfall.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-S5L6TJBWGJ"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+ 			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'G-S5L6TJBWGJ');
+		</script>
+	</head>
+	<body class="blru">
+	    <div class="topnav">
+			<a href="https://vavebot.pl/"><img class="img" src="https://cdn.vavebot.pl/official_logo.png" /></a>
+			<a class="lnk" href="https://vavebot.pl/">Land</a>
+			<a class="lnk active" href="https://vavebot.pl/dashboard/692107912742568007/">Plugins</a>
+			<a class="lnk" href="https://vavebot.pl/dashboard/692107912742568007/settings">Settings</a>
+			<a class="lnk" href="https://vavebot.pl/support">Support Server</a>
+			<a class="lnk" style="color: GOLD;" href="https://vavebot.pl/donate">Donate</a>
+			<div class="topnav-right">
+				<div class="dropdown">
+					<button class="lnk2 dropbtn">
+						<header class="header6">
+							<img class="img2" src="https://cdn.discordapp.com/avatars/406085770018029568/6055842ba388845963982b7f1ffea647.png?size=128">
+							&nbsp;!                Wcale nie Matti#2100
+						</header>
+					</button>
+					<div class="dropdown-content">
+					  <a href="https://vavebot.pl/dashboard/">Dashboard</a>
+					  <a href="https://vavebot.pl/account/">My account</a>
+					  <a href="https://vavebot.pl/account/logout">Logout</a>
+					</div>
+				  </div>
+			</div>
+		</div>
+
+		<div class="notification-box" id="notifi-dash"></div>
+
+		<div style="margin-top: 15px;"></div>
+        <div class="modules">
+			<div class="head">
+				<header class="header3"><img src="../../../assets/img/icons8/moderation.png">
+					<h1>&nbsp; Moderation</h1>
+					<a class="back" href="../">Back to modules</a>
+					<a class="redb" onclick="alrt()">Disable</a>
+				</header>
+			</div>
+			<hr />
+            <div class="body">
+				<h1 class="title">Audit logging</h1>
+				<div class="logs">
+					<header class="header1">Logging channel</header>
+					<form>
+						<select id="channel1" name="channel1">
+							<option value="785094767620128788">🔷・logs</option>
+							<option value="699922361281150976">📋・talking</option>
+						</select>
+					</form>
+					<header class="header1">Message events</header>
+					<div class="f1">
+						<input id="msgDeleted" type="checkbox" checked> Message deleted
+						<input id="msgEdited" type="checkbox" checked> Message edited
+						<input id="msgSent" type="checkbox"> Message sent
+					</div>
+					<header class="header1">Moderation events</header>
+					<div class="f2">
+						<input id="modWarn" type="checkbox" checked> Member warned
+						<input id="modMute" type="checkbox"> Member muted
+						<input id="modUnmute" type="checkbox"> Member unmuted
+						<input id="modKick" type="checkbox" checked> Member kicked
+						<input id="modBan" type="checkbox" checked> Member banned
+						<input id="modUnban" type="checkbox"> Member unbanned
+					</div>
+					<header class="header1">Member events</header>
+					<div class="f3">
+						<input id="memNick" type="checkbox"> Nickname changed
+						<input id="memUpdate" type="checkbox"> User updated
+						<input id="memJoin" type="checkbox" checked> Member joined
+						<input id="memLeft" type="checkbox" checked> Member left
+					</div>
+					<header class="header1">Role events</header>
+					<div class="f4">
+						<input id="rCreate" type="checkbox"> Role created
+						<input id="rUpdate" type="checkbox"> Role updated
+						<input id="rDelete" type="checkbox"> Role deleted
+						<input id="rChange" type="checkbox" checked> Member roles changed
+					</div>
+					<header class="header1">Voice events</header>
+					<div class="f4">
+						<input id="vcJoin" type="checkbox"> Member joined voice channel
+						<input id="vcLeft" type="checkbox"> Member left voice channel
+					</div>
+					<header class="header1">Server events</header>
+					<div class="f4">
+						<input id="srvEdit" type="checkbox" checked> Server edited
+						<input id="srvEmoji" type="checkbox" checked> Emojis updated
+					</div>
+					<header class="header1">Channel events</header>
+					<div class="f4">
+						<input id="chaCreate" type="checkbox" checked> Channel created
+						<input id="chaUpdate" type="checkbox" checked> Channel updated
+						<input id="chaDelete" type="checkbox" checked> Channel deleted
+					</div>
+				</div>
+			</div>
+			<hr />
+           	<div class="commands">
+				<h1 class="title">Auto-moderation</h1>
+				<div class="cmd">
+					<h1>Bad words</h1>
+					<form class="form">
+						<svg aria-hidden="false" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18 20L16.565 18.564C15.797 19.099 14.932 19.498 14 19.738V22H10V19.738C9.069 19.498 8.203 19.099 7.436 18.564L6 20L4 18L5.436 16.564C4.901 15.799 4.502 14.932 4.262 14H2V10H4.262C4.502 9.068 4.9 8.202 5.436 7.436L4 6L6 4L7.436 5.436C8.202 4.9 9.068 4.502 10 4.262V2H14V4.261C14.932 4.502 15.797 4.9 16.565 5.435L18 3.999L20 5.999L18.564 7.436C19.099 8.202 19.498 9.069 19.738 10ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"></path></svg>&nbsp;&nbsp;<input id="s2" type="checkbox" class="switch">
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>Server invites</h1>
+					<form class="form">
+						<svg aria-hidden="false" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18 20L16.565 18.564C15.797 19.099 14.932 19.498 14 19.738V22H10V19.738C9.069 19.498 8.203 19.099 7.436 18.564L6 20L4 18L5.436 16.564C4.901 15.799 4.502 14.932 4.262 14H2V10H4.262C4.502 9.068 4.9 8.202 5.436 7.436L4 6L6 4L7.436 5.436C8.202 4.9 9.068 4.502 10 4.262V2H14V4.261C14.932 4.502 15.797 4.9 16.565 5.435L18 3.999L20 5.999L18.564 7.436C19.099 8.202 19.498 9.069 19.738 10ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"></path></svg>&nbsp;&nbsp;<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>Extrenal links</h1>
+					<form class="form">
+						<svg aria-hidden="false" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18 20L16.565 18.564C15.797 19.099 14.932 19.498 14 19.738V22H10V19.738C9.069 19.498 8.203 19.099 7.436 18.564L6 20L4 18L5.436 16.564C4.901 15.799 4.502 14.932 4.262 14H2V10H4.262C4.502 9.068 4.9 8.202 5.436 7.436L4 6L6 4L7.436 5.436C8.202 4.9 9.068 4.502 10 4.262V2H14V4.261C14.932 4.502 15.797 4.9 16.565 5.435L18 3.999L20 5.999L18.564 7.436C19.099 8.202 19.498 9.069 19.738 10ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"></path></svg>&nbsp;&nbsp;<input id="s2" type="checkbox" class="switch">
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>Mass emoji</h1>
+					<form class="form">
+						<svg aria-hidden="false" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18 20L16.565 18.564C15.797 19.099 14.932 19.498 14 19.738V22H10V19.738C9.069 19.498 8.203 19.099 7.436 18.564L6 20L4 18L5.436 16.564C4.901 15.799 4.502 14.932 4.262 14H2V10H4.262C4.502 9.068 4.9 8.202 5.436 7.436L4 6L6 4L7.436 5.436C8.202 4.9 9.068 4.502 10 4.262V2H14V4.261C14.932 4.502 15.797 4.9 16.565 5.435L18 3.999L20 5.999L18.564 7.436C19.099 8.202 19.498 9.069 19.738 10ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"></path></svg>&nbsp;&nbsp;<input id="s2" type="checkbox" class="switch">
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>Repeated text</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch">
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>Excessive caps</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch">
+					</form>
+				</div>
+			</div>
+			<hr />
+            <div class="commands">
+				<h1 class="title">Commands</h1>
+				<header class="header1">None&nbsp;
+					<div class="tooltip">
+						<svg name="InfoFilled" class="tooltip-3euH8y" width="16" height="16" viewBox="0 0 12 12">
+							<path fill="currentColor" d="M6 1C3.243 1 1 3.244 1 6c0 2.758 2.243 5 5 5s5-2.242 5-5c0-2.756-2.243-5-5-5zm0 2.376a.625.625 0 110 1.25.625.625 0 010-1.25zM7.5 8.5h-3v-1h1V6H5V5h1a.5.5 0 01.5.5v2h1v1z"></path>
+						</svg>
+  						<span class="tooltiptext">This category means that the command in it can be used by everyone</span>
+					</div>
+				</header>
+				<div class="cmd">
+					<h1>.case</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.embed</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.poll</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.slowmode</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.clear</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div><br /><br /><br /><br /><br /><br />
+				<header class="header1">Medium&nbsp;
+					<div class="tooltip">
+						<svg name="InfoFilled" class="tooltip-3euH8y" width="16" height="16" viewBox="0 0 12 12">
+							<path fill="currentColor" d="M6 1C3.243 1 1 3.244 1 6c0 2.758 2.243 5 5 5s5-2.242 5-5c0-2.756-2.243-5-5-5zm0 2.376a.625.625 0 110 1.25.625.625 0 010-1.25zM7.5 8.5h-3v-1h1V6H5V5h1a.5.5 0 01.5.5v2h1v1z"></path>
+						</svg>
+  						<span class="tooltiptext">This category means that the command in it requires medium permissions</span>
+					</div>
+				</header>
+				<div class="cmd">
+					<h1>.lock</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.unlock</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.warn</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.mute</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.tempmute</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.unmute</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.voicemute</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.voiceunmute</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.voicekick</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div><br /><br /><br /><br /><br /><br /><br /><br /><br />
+				<header class="header1">High&nbsp;
+					<div class="tooltip">
+						<svg name="InfoFilled" class="tooltip-3euH8y" width="16" height="16" viewBox="0 0 12 12">
+							<path fill="currentColor" d="M6 1C3.243 1 1 3.244 1 6c0 2.758 2.243 5 5 5s5-2.242 5-5c0-2.756-2.243-5-5-5zm0 2.376a.625.625 0 110 1.25.625.625 0 010-1.25zM7.5 8.5h-3v-1h1V6H5V5h1a.5.5 0 01.5.5v2h1v1z"></path>
+						</svg>
+  						<span class="tooltiptext">This category means that the command in it requires high permissions</span>
+					</div>
+				</header>
+				<div class="cmd">
+					<h1>.kick</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.ban</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.tempban</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.hackban</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.unban</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+				<div class="cmd">
+					<h1>.config</h1>
+					<form class="form">
+						<input id="s2" type="checkbox" class="switch" checked>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="../../../scripts/load.js"></script>
+		<script src="../../../scripts/link_newindow.js"></script>
+		<script src="../../../scripts/navbar.js"></script>
+		<script src="../../../scripts/notifications.js"></script>
+    </body>
+</html>
