@@ -2566,3 +2566,7 @@ a:active .elements2Description {
 	.noresponsiveH1 {display: block;}
 	.backgnd{background-color:none;background-image:url(https://cdn.vavebot.pl/smudge.png);height:500px;}
 }*/
+
+@media screen and (max-width: 750px) {
+	body {filter: blur(100px);}
+}

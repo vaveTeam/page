@@ -12,24 +12,56 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Ouh... Not found!</title>
-        <meta charset="UTF-8">
-		
+        <title>Ouh... Not found</title>
+		<meta charset="UTF-8">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+		<meta name=application-name content="vave">
+		<meta property=og:type content=website>
 		<meta property="og:url" content="https://vavebot.pl/" />
 		<meta property="og:site_name" content="#stayathome" />
-		<meta property="og:title" content="vave | 404 Error" />
-		<meta property="og:description" content="Multipurpose & multilanguage bot for Discord servers | Not found!" />
+		<meta property="og:title" content="vave | Error 404" />
+		<meta property="og:description" content="vave is a multipurpose & multilanguage bot for Discord servers. 300 guilds trusted us, trust & u." />
 		<meta property="og:image" content="https://cdn.vavebot.pl/official_logo.png" />
 		<meta name="theme-color" content="#7289DA" />
 		
+		<meta name="keywords" content="vave, wave, fale, discord bot, bot, discord, clyde, mee6, xenon, dyno">
 		<link rel="icon" type="image/png" href="assets/img/favicon.png">
-        <link rel="stylesheet" href="https://vavebot.pl/assets/error_css/app.css"> 
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet">
+		<link rel="stylesheet" href="assets/error_css/app.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-S5L6TJBWGJ"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+ 			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'G-S5L6TJBWGJ');
+		</script>
     </head>
-    <body>
-        <div class="cat">
+    <body id="body">
+		<div class="first" id="f">
+			<div class="cat">
             	<center>
-		    <img src="https://http.cat/404">
-		</center>
-        </div>
+		    		<img src="https://http.cat/404">
+				</center>
+        	</div>
+		</div>
+		<div class="second" id="s">
+			<div class="title">Test your reaction time!</div>
+			<div class="description">Click on the circles as quickly as you can.</div>
+			<p id="reactiontime">0.000s</p>
+			<div id="box"></div>
+			<script src="scripts/reactiontime.js"></script>
+		</div>
+		<script src="scripts/load.js"></script>
+		<script>
+			window.addEventListener('load', function () {
+				let rs = Math.floor(Math.random() * 6);
+				console.log(rs);
+    			if (rs == 0 || rs == 1 || rs == 2 || rs == 3 || rs == 4) { document.getElementById('f').style.display = 'block';}
+    			else {document.getElementById('s').style.display = 'block';}
+			});
+		</script>
     </body>
 </html>
