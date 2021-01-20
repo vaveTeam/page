@@ -4,7 +4,7 @@ window.addEventListener('load', function () {
 function alrt() {alert('error')}
 
 document.addEventListener('keydown', function(e) {
-    document.getElementsByTagName('body')[0].innerHTML = '<audio id="soundclip"><source src="assets/audio/keypress.mp3"></source></audio>';
+    document.getElementsByTagName('body')[0].innerHTML = '<audio id="soundclip"><source src="https://vavebot.pl/assets/audio/keypress.mp3"></source></audio>';
     document.getElementById('soundclip').play();
 });
 
