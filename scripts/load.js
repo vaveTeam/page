@@ -23,7 +23,7 @@ $(document).keydown(function (event) {
         } else if (rl.msRequestFullscreen) {
             rl.msRequestFullscreen();
         }
-        return false;
+        return;
     } 
     else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
         rl.style.display = "block";
@@ -36,7 +36,7 @@ $(document).keydown(function (event) {
         } else if (rl.msRequestFullscreen) {
             rl.msRequestFullscreen();
         }
-        return false;
+        return;
     } 
     else if (event.ctrlKey && event.keyCode == 85) {
         rl.style.display = "block";
@@ -49,7 +49,7 @@ $(document).keydown(function (event) {
         } else if (rl.msRequestFullscreen) {
             rl.msRequestFullscreen();
         }
-        return false;
+        return;
     } 
 });
 
