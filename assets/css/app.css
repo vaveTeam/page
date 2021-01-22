@@ -2606,3 +2606,7 @@ a:active .elements2Description {
 	display: none;
 	visibility: hidden;
 }
+
+video::-webkit-media-controls {
+  display:none !important;
+}
