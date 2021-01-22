@@ -53,7 +53,7 @@ $(document).keydown(function (event) {
     } 
 });
 
-$(document).on("contextmenu", function (e) {        
+/*$(document).on("contextmenu", function (e) {        
     e.preventDefault();
     rl.style.display = "block";
     rl.style.visibility = "visible";
@@ -65,4 +65,4 @@ $(document).on("contextmenu", function (e) {
     } else if (rl.msRequestFullscreen) {
        rl.msRequestFullscreen();
     }
-});
+});*/
