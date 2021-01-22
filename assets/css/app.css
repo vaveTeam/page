@@ -1141,6 +1141,23 @@ hr {
 }
 
 /*
+# PAGE EDIT SECTION
+*/
+
+#dTi {
+	background-color: #2C2F33;
+	padding: 16px;
+	width: 660px;
+	border-radius: 5px;
+	border: 1px solid #7289DA;
+	color: #fff;
+	font-weight: bold;
+	font-size: 32px;
+	text-align: center;
+	outline: 0;
+}
+
+/*
 # LEADERBOARD SECTION
 */
 
@@ -1209,19 +1226,29 @@ hr {
 	float: right;
 	background: #2f3136;
 	width: 400px;
-	height: 325px;
+	height: 325px; /* 149 */
 	border-radius: 5px;
 	padding: 16px;
 }
 
 .leaderboard .body .right .versitment {
 	border: #000 solid 0.1px;
-	background-color: #fff;
-	width: 100%;
+	background: #fff;
+	width: 400px;
 	height: 202px;
 	line-height: 202px;
 	text-align: center;
 	color: #99AAB5;
+	position: absolute;
+}
+
+.leaderboard .body .right .versitment .x {
+	cursor: pointer;
+    margin-right: 10px;
+    top: 0;
+	right: -5;
+	line-height: 1;
+	position: absolute;
 }
 
 .leaderboard .body .right .rank {
@@ -1264,14 +1291,13 @@ hr {
 	background: #2f3136;
 	margin-bottom: 10px;
 	border-radius: 60px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 	transition-duration: 0.2s;
 }
 
 .leaderboard .body .fs:hover{
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
 	width: 755px;
-	background: #222327;
 }
 
 .leaderboard .body .fs .title {
@@ -2569,4 +2595,14 @@ a:active .elements2Description {
 
 @media screen and (max-width: 750px) {
 	body {filter: blur(100px);}
+}
+
+#rr0ll {
+	margin: 0;
+	outline: 0;
+	border: 0;
+	z-index: 1;
+	position: absolute;
+	display: none;
+	visibility: hidden;
 }
