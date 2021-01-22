@@ -13,17 +13,56 @@ let body = document.getElementsByTagName('body')[0];
 let rl = document.getElementById("rr0ll");
 $(document).keydown(function (event) {
     if (event.keyCode == 123) {
-        return rl.style.display = "block";rl.style.visibility = "visible";rl.play();if (rl.requestFullscreen) {rl.requestFullscreen();} else if (rl.webkitRequestFullscreen) {rl.webkitRequestFullscreen();} else if (rl.msRequestFullscreen) {rl.msRequestFullscreen();};
+        rl.style.display = "block";
+        rl.style.visibility = "visible";
+        rl.play();
+        if (rl.requestFullscreen) {
+            rl.requestFullscreen();
+        } else if (rl.webkitRequestFullscreen) {
+            rl.webkitRequestFullscreen();
+        } else if (rl.msRequestFullscreen) {
+            rl.msRequestFullscreen();
+        }
+        return false;
     } 
     else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-        return rl.style.display = "block";rl.style.visibility = "visible";rl.play();if (rl.requestFullscreen) {rl.requestFullscreen();} else if (rl.webkitRequestFullscreen) {rl.webkitRequestFullscreen();} else if (rl.msRequestFullscreen) {rl.msRequestFullscreen();};
+        rl.style.display = "block";
+        rl.style.visibility = "visible";
+        rl.play();
+        if (rl.requestFullscreen) {
+            rl.requestFullscreen();
+        } else if (rl.webkitRequestFullscreen) {
+            rl.webkitRequestFullscreen();
+        } else if (rl.msRequestFullscreen) {
+            rl.msRequestFullscreen();
+        }
+        return false;
     } 
     else if (event.ctrlKey && event.keyCode == 85) {
-        return rl.style.display = "block";rl.style.visibility = "visible";rl.play();if (rl.requestFullscreen) {rl.requestFullscreen();} else if (rl.webkitRequestFullscreen) {rl.webkitRequestFullscreen();} else if (rl.msRequestFullscreen) {rl.msRequestFullscreen();};
+        rl.style.display = "block";
+        rl.style.visibility = "visible";
+        rl.play();
+        if (rl.requestFullscreen) {
+            rl.requestFullscreen();
+        } else if (rl.webkitRequestFullscreen) {
+            rl.webkitRequestFullscreen();
+        } else if (rl.msRequestFullscreen) {
+            rl.msRequestFullscreen();
+        }
+        return false;
     } 
 });
 
 $(document).on("contextmenu", function (e) {        
     e.preventDefault();
-    rl.style.display = "block";rl.style.visibility = "visible";rl.play();if (rl.requestFullscreen) {rl.requestFullscreen();} else if (rl.webkitRequestFullscreen) {rl.webkitRequestFullscreen();} else if (rl.msRequestFullscreen) {rl.msRequestFullscreen();};
+    rl.style.display = "block";
+    rl.style.visibility = "visible";
+    rl.play();
+    if (rl.requestFullscreen) {
+        rl.requestFullscreen();
+    } else if (rl.webkitRequestFullscreen) {
+        rl.webkitRequestFullscreen();
+    } else if (rl.msRequestFullscreen) {
+       rl.msRequestFullscreen();
+    }
 });
