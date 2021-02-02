@@ -8,7 +8,7 @@ function alrt() {alert('error')}
     document.getElementById('soundclip').play();
 });*/
 
-//* Block F12, Ctrl + Shift + I, Ctrl + U, Right Click
+//* Block F12, Ctrl + Shift + I, Ctrl + U, Right Click, F5
 let body = document.getElementsByTagName('body')[0];
 let rl = document.getElementById("rr0ll");
 $(document).keydown(function (event) {
@@ -24,7 +24,22 @@ $(document).keydown(function (event) {
             rl.msRequestFullscreen();
         }
         return false;
-    } 
+    }
+    else if (event.keyCode == 116) {
+        if(window.innerHeight == screen.height) {
+            rl.style.display = "block";
+            rl.style.visibility = "visible";
+            rl.play();
+            if (rl.requestFullscreen) {
+                rl.requestFullscreen();
+            } else if (rl.webkitRequestFullscreen) {
+                rl.webkitRequestFullscreen();
+            } else if (rl.msRequestFullscreen) {
+                rl.msRequestFullscreen();
+            }
+            return false;
+        }
+    }
     else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
         rl.style.display = "block";
         rl.style.visibility = "visible";
@@ -37,7 +52,7 @@ $(document).keydown(function (event) {
             rl.msRequestFullscreen();
         }
         return false;
-    } 
+    }
     else if (event.ctrlKey && event.keyCode == 85) {
         rl.style.display = "block";
         rl.style.visibility = "visible";
@@ -50,7 +65,7 @@ $(document).keydown(function (event) {
             rl.msRequestFullscreen();
         }
         return false;
-    } 
+    }
 });
 
 /*$(document).on("contextmenu", function (e) {        
