@@ -795,15 +795,6 @@ hr {
 	border-radius: 8px;
 }
 
-.cards .container .controls {
-	cursor: pointer;
-    margin-right: 10px;
-	font-size: 12px;
-	line-height: 1;
-	color: white;
-	float: left;
-}
-
 
 
 /*
@@ -1343,6 +1334,103 @@ hr {
 	width: 80px;
 	margin-right: 20px;
 }
+
+/*
+# SERVERS SECTION
+*/
+
+#searchinput {
+	background-color: #202225;
+	color: white;
+	background-repeat: no-repeat;
+	width: 1000px;
+	height: 40px;
+	font-size: 14px;
+	padding: 12px 20px 12px 20px;
+	margin-bottom: 12px;
+	outline: 0; 
+	border: 0;
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#searchinput:active { outline: 0; border: 0; }
+  
+#searchlist {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#searchlist .box {
+	background: #2C2F33;
+	width: 1000px;
+	height: 65px;
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+}
+
+#searchlist .content {
+	border-radius: 4px;
+	border: none;
+	display: block;
+	margin-bottom: 5px;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	padding: 12px;
+}
+
+#searchlist img.avatar {
+	margin-right: 5px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	transition-duration: 0.3s;
+}
+
+#searchlist img.icon {
+	margin-right: 5px;
+	margin-left: 5px;
+	width: 18px;
+	height: 18px;
+	transition-duration: 0.3s;
+}
+
+/*#searchlist li {
+	background: url(../img/test.png);
+	border-radius: 4px;
+	padding: 12px;
+	width: 975px;
+	height: 41px;
+	line-height: 41px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+#searchlist .box {
+	padding: 0px;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+  
+#searchlist .box a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #99AAB5;
+	transition-duration: 0.3s;
+}
+
+#searchlist li a:hover {
+	color: white;
+}*/
 
 /*
 # ACCOUNT SECTION
@@ -2554,7 +2642,11 @@ a:active .elements2Description {
 */
 
 
-
+@media screen and (max-width: 1150px) {
+	.notification-box {
+		display: none;
+	}
+}
 
 /*@media screen and (max-width: 800px) {
 	.snowflakes {display: none;}
