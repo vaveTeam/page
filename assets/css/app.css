@@ -47,10 +47,48 @@ hr {
 
 
 /*
-# LOAD POPUP ##000
+# STREAM ##000
 */
 
+.stream {
+	margin-top: 25px;
+	height: 408px;
+}
 
+.stream .live {
+	height: 408px;
+	width: 650px;
+	border-radius: 5px;
+	border: none;
+}
+
+.stream .chat {
+	height: 408px; 
+	width: 350px;
+	border-radius: 5px;
+	border: none;
+}
+
+.stream .versitment {
+	border: #000 solid 0.1px;
+	background: #fff;
+	width: 600px;
+	height: 102px;
+	line-height: 202px;
+	text-align: center;
+	color: #99AAB5;
+	position: absolute;
+	bottom: 0;
+}
+
+.stream .versitment .x {
+	cursor: pointer;
+    margin-right: 10px;
+    top: 0;
+	right: -5;
+	line-height: 1;
+	position: absolute;
+}
 
 /* 
 # NOTIFICATIONS ##001
