@@ -1298,8 +1298,7 @@ hr {
 }
 
 .leaderboard .body .right .versitment {
-	border: #000 solid 0.1px;
-	background: #fff;
+	background: url(../versitments/flax_banner2.svg);
 	width: 400px;
 	height: 202px;
 	line-height: 202px;

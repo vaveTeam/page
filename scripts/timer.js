@@ -1,25 +1,30 @@
-var countDownDate = new Date("Mar 23, 2021 00:00:00").getTime();
+let countDownDate = new Date("Mar 23, 2021 00:00:00").getTime();
 
-var x = setInterval(function() {
-  	var now = new Date().getTime();
-  	var distance = countDownDate - now;
+let x = setInterval(function() {
+	let now = new Date().getTime();
+  	let distance = countDownDate - now;
 
-  	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
- 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  	let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  	let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  	let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+ 	let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	if (!document.getElementById("countdown")) {
+		return;
+	} else {
+		cdelem.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+		let cdelem = document.getElementById("countdown");
+		if (distance <= 300000) {
+			cdelem.classList.add('--red');
+			cdelem.classList.remove('--normal');
+		}
 	
-  	document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-	if (distance <= 300000) {
-		document.getElementById("notcol1").classList.add('--red');
-		document.getElementById("notcol1").classList.remove('--normal');
-	}
-
-	if (distance <= 1000) {
-		clearInterval(x);
-		document.getElementById("countdown").innerHTML = "RELEASED!";
-		document.getElementById("notcol1").classList.add('--green');
-		document.getElementById("notcol1").classList.remove('--red');
+		if (distance <= 1000) {
+			clearInterval(x);
+			cdelem.innerHTML = "RELEASED!";
+			cdelem.classList.add('--green');
+			cdelem.classList.remove('--red');
+		}
 	}
 
 }, 1000);
