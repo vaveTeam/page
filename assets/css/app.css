@@ -1607,7 +1607,7 @@ hr {
 	border: 0,1px dotted #99AAB5;
 	background: #2e3438;
 	box-shadow: rgba(0, 0, 0, 0.125) 0px 0px 10px;
-	border-radius: 15px;
+	border-radius: 5px;
 	padding-top: 16px;
 	padding-bottom: 16px;
 }
@@ -1659,7 +1659,7 @@ hr {
 .elements2 {
 	background: #2C2F33;
 	box-shadow: rgba(0, 0, 0, 0.125) 0px 0px 10px;
-    border-radius: 15px;
+    border-radius: 5px;
 	position: relative;
 	/*border: 1px dotted #99AAB5;*/
 	margin: 5px;
@@ -1678,7 +1678,7 @@ hr {
 }
 
 .elements2:hover {
-	background: #2C1C25;
+	background: #382f34;
 }
 
 .elements2Pos {
@@ -1715,11 +1715,12 @@ hr {
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
-	font-size: 18px;
+	font-size: 17px;
 	height: 85px;
 	/*border: 1px dotted #99AAB5;*/
 	max-width: 300px;
 	float: left;
+	font-weight: 300;
 }
 
 
@@ -1830,6 +1831,8 @@ hr {
 	margin: none;
 	border: none;
 	width: 99.6%;
+	font-weight: 650;
+	text-transform: uppercase;
 	height: 41px;
 	margin: 5px;
 }
@@ -1838,9 +1841,9 @@ hr {
 	float: left;
 	color: #b8b8b8;
 	text-align: center;
-	padding: 11px 20px;
+	padding: 13px 24px;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 12px;
 	border-radius: 5px;
 	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
