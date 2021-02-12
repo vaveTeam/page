@@ -1427,8 +1427,8 @@ hr {
 	border: none;
 	display: block;
 	margin-bottom: 5px;
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
+	width: 975px;
+	height: 40px;
 	padding: 12px;
 }
 
@@ -1841,7 +1841,7 @@ hr {
 	float: left;
 	color: #b8b8b8;
 	text-align: center;
-	padding: 13px 24px;
+	padding: 12px 24px;
 	text-decoration: none;
 	font-size: 12px;
 	border-radius: 5px;
@@ -1936,10 +1936,14 @@ hr {
 	text-decoration: none;
 	display: block;
 	text-align: left;
+	font-weight: 200;
+	text-transform: capitalize;
 }
   
 .topnav .dropdown-content a:hover {
 	color: #fff;
+	background-color: #23272A;
+	border-radius: 5px;
 }
   
 .topnav .dropdown:hover .dropdown-content {
