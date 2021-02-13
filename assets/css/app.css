@@ -811,7 +811,7 @@ hr {
 }
 
 .cards .container {
-	width: 1299.9px;
+	width: 1251px;
 	height: auto;
 	color: black;
 	margin-left: auto;
@@ -819,13 +819,13 @@ hr {
 }
 
 .cards .card {
-	width: 399.3px;
-	height: 150px;
+	width: 385px;
+	height: 152px;
 	margin: 5px;
 	border-radius: 5px;
 	float: left;
-	padding: 12px;
-	background: rgba(66, 66, 66, 0.74);
+	padding: 11px;
+	background: rgb(62, 66, 70);
 }
 
 .cards .card h1 {
@@ -833,13 +833,13 @@ hr {
 }
 
 .cards .card2 {
-	width: 1265px;
-	height: 180px;
+	width: 1219.5px;
+	height: 152px;
 	margin: 5px;
 	border-radius: 5px;
 	float: left;
-	padding: 12px;
-	background: rgba(66, 66, 66, 0.74);
+	padding: 11px;
+	background: rgb(62, 66, 70);
 }
 
 .cards .card2 h1 {
@@ -1844,7 +1844,7 @@ hr {
 	padding: 12px 24px;
 	text-decoration: none;
 	font-size: 12px;
-	border-radius: 5px;
+	border-radius: 4px;
 	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 	margin-right: 6px;
