@@ -928,7 +928,7 @@ hr {
 
 .team {
 	width: 100%;
-	height: 1200px;
+	height: 1300px;
 	background: #1c1e20;
 }
 
@@ -958,9 +958,8 @@ hr {
     flex-wrap: wrap;
 	margin-left: auto;
 	margin-right: auto;
-	width: 995px;
+	width: 723.07px;
 	text-align: center;
-	/* border: 1px solid white; */
 }
 
 .team .row3 {
@@ -971,9 +970,20 @@ hr {
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 858.6px;
+	width: 562px;
 	text-align: center;
-	/* border: 1px solid white; */
+}
+
+.team .row4 {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 568px;
+	text-align: center;
 }
 
 .team .u1 {
@@ -1011,7 +1021,7 @@ hr {
 	height: 208px;
 	margin-top: 5px;
 	margin-left: 0px;
-	margin-right: 10px;
+	margin-right: 35px;
 }
 
 .team .u5 {
@@ -1064,7 +1074,6 @@ hr {
 	height: 208px;
 	margin-top: 5px;
 	margin-left: 0px;
-	margin-right: 15px;
 }
 
 .team .u11 {
