@@ -8,7 +8,7 @@
 #                                                                                 #
 ###################################################################################
 */
- 
+
 html {
 	scroll-behavior: smooth;
 }
@@ -23,6 +23,11 @@ body {
 	outline: 0;
 	border: 0;
 	filter: blur(0px);
+	user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
 .blru {
@@ -873,60 +878,224 @@ hr {
 
 
 /*
-# ADD SECTION ##011
+# STATISTICS SECTION ##00010
 */
 
-.add {
-	margin-top: 100px;
-	background-color: #2C2F33;
-	border-radius: 5px;
-	margin-right: auto;
+.statistics {
+	width: 840px;
+	height: 250px;
 	margin-left: auto;
-	width: 1200px;
-	padding-top: 70px;
-	padding-bottom: 70px;
-	color: white;
+	margin-right: auto;
 }
 
-.add h1 {
-	font-family: 'Poppins', Helvetica, arial, sans-serif;
+.statistics h1 {
+	font-size: 48px;
+	font-weight: 800;
+	color: white;
 	text-align: center;
-	color: white;
-	font-size: 40px;
-	margin-bottom: 1px;
 }
 
-.add p {
-	font-size: 19px;
-	margin-top: 1px;
-	margin-bottom: 50px;
-    text-align: center;
-    line-height: 1.8;
-	color: #ffffffb3;
+.statistics .numbers {
+	width: 598.7px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.add a {
-	font-family: 'Open Sans', Helvetica, arial, sans-serif;
-	background-color: #000;
-	transition-duration: 0.4s;
-	text-decoration: none;
-	margin-bottom: 20px;
-	border-radius: 4px;
-	padding: 13px 60px;
-	margin-right: 5px;
-	user-select: none;
-	font-weight: 600;
-	min-height: 32px;
-	margin-left: 5px;
-	margin-bottom: 20px;
-	cursor: pointer;
-	font-size: 18px;
-	line-height: 1;
-	border: none;
+.statistics .numbers .stat h1 {
+	font-size: 24px;
+	font-weight: 400;
+	color: #99AAB5;
+	line-height: 0;
+}
+
+.statistics .numbers .stat span {
+	font-size: 48px;
+	font-weight: 800;
 	color: white;
 }
 
+.statistics .numbers .stat {
+	float: left;
+	text-align: center;
+	margin-left: 30px;
+	margin-right: 30px;
+}
 
+/*
+# TEAM SECTION ##011
+*/
+
+.team {
+	width: 100%;
+	height: 1200px;
+	background: #1c1e20;
+}
+
+.team h1 {
+	text-align: center;
+	font-size: 42px;
+	font-weight: 900;
+	color: white;
+}
+
+.team .row {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	width: 458px;
+	text-align: center;
+	/* border: 1px solid white; */
+}
+
+.team .row2 {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	width: 995px;
+	text-align: center;
+	/* border: 1px solid white; */
+}
+
+.team .row3 {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 858.6px;
+	text-align: center;
+	/* border: 1px solid white; */
+}
+
+.team .u1 {
+	text-align: center;
+	width: 173.28px;
+	height: 208px;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 10px;
+	/* border: 1px solid black;*/
+}
+
+.team .u2 {
+	text-align: center;
+	width: 250px;
+	height: 208px;
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-right: 0px;
+	/* border: 1px solid black;*/
+}
+
+.team .u3 {
+	text-align: center;
+	width: 173.28px;
+	height: 208px;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+.team .u4 {
+	text-align: center;
+	width: 250px;
+	height: 208px;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+.team .u5 {
+	text-align: center;
+	width: 173.28px;
+	height: 208px;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+.team .u6 {
+	text-align: center;
+	width: 173.28px;
+	height: 208px;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+.team .u7 {
+	text-align: center;
+	width: 173.28px;
+	height: 208px;
+	margin-top: 5px;
+	margin-left: 0px;
+}
+
+.team .u8 {
+	text-align: center;
+	width: 173.28px;
+	height: 208px;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 20px;
+}
+
+.team .u9 {
+	text-align: center;
+	width: 175px;
+	height: 208px;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 20px;
+}
+
+.team .u10 {
+	text-align: center;
+	width: 282px;
+	height: 208px;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 15px;
+}
+
+.team .u11 {
+	text-align: center;
+	width: 173.28px;
+	height: 208px;
+	margin-top: 5px;
+	margin-left: 0px;
+}
+
+.team .member img {
+	border-radius: 50%;
+	width: 128px;
+	padding: 8px;
+	border: 2px solid #99AAB5;
+	margin-bottom: 12.5px;
+	transition-duration: 0.3s;
+}
+
+.team .member img:hover {
+	padding: 0px;
+	width: 144px;
+	border: 2px solid transparent;
+	transform: rotate(5deg);
+}
+
+.team .member .name {
+	margin-top: 12.5px;
+	font-size: 24px;
+	font-weight: bold;
+}
 
 
 /*
