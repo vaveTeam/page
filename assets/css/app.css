@@ -793,12 +793,20 @@ hr {
 # CARDS SECTION ##010
 */
 
+.cards {
+	margin-top: 0;
+	width: 100%;
+	height: 640px;
+	background: #7289DA;
+}
+
 .cards h1 {
 	font-family: 'Poppins', Helvetica, arial, sans-serif;
 	text-align: center;
 	color: white;
 	font-size: 40px;
 	margin-bottom: 1px;
+	line-height: 1;
 }
 
 .cards p {
@@ -810,10 +818,27 @@ hr {
 	color: #ffffffb3;
 }
 
+.cards2 h1 {
+	font-family: 'Poppins', Helvetica, arial, sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	margin-bottom: 1px;
+	line-height: 1;
+}
+
+.cards2 p {
+	font-size: 19px;
+	margin-top: 1px;
+	margin-bottom: 50px;
+	text-align: center;
+	line-height: 1.8;
+	color: #ffffffb3;
+}
+
 .cards .container {
 	width: 1251px;
-	height: auto;
-	color: black;
+	height: 521.94px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -825,7 +850,7 @@ hr {
 	border-radius: 5px;
 	float: left;
 	padding: 11px;
-	background: rgb(62, 66, 70);
+	background: #23272A;
 }
 
 .cards .card h1 {
@@ -839,7 +864,7 @@ hr {
 	border-radius: 5px;
 	float: left;
 	padding: 11px;
-	background: rgb(62, 66, 70);
+	background: #23272A;
 }
 
 .cards .card2 h1 {
@@ -853,7 +878,7 @@ hr {
 
 .add {
 	margin-top: 100px;
-	background-color: rgb(62, 66, 70);
+	background-color: #2C2F33;
 	border-radius: 5px;
 	margin-right: auto;
 	margin-left: auto;
