@@ -12,8 +12,8 @@ let x = setInterval(function() {
 	if (!document.getElementById("countdown")) {
 		return;
 	} else {
-		cdelem.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 		let cdelem = document.getElementById("countdown");
+		cdelem.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 		if (distance <= 300000) {
 			cdelem.classList.add('--red');
 			cdelem.classList.remove('--normal');
