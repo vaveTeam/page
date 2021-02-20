@@ -928,7 +928,7 @@ hr {
 
 .team {
 	width: 100%;
-	height: 1300px;
+	min-height: 1300px;
 	background: #1c1e20;
 }
 
