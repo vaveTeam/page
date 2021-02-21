@@ -30,6 +30,7 @@ body {
 	-ms-user-select: none;
 }
 
+/* to jest od blura przy ladowaniu, mozesz zrobic lepsze */
 .blru {
 	filter: blur(50px);
 }
@@ -52,7 +53,7 @@ hr {
 
 
 /*
-# STREAM ##000
+# STREAM ##000 to jest od /w2g
 */
 
 .stream {
@@ -96,7 +97,7 @@ hr {
 }
 
 /* 
-# NOTIFICATIONS ##001
+# NOTIFICATIONS ##001 to jest od powiadomien
 */
 
 .notification {
@@ -160,7 +161,7 @@ hr {
 
 
 /*
-# POPUP 1 ##002
+# POPUP 1 ##002 to jest od popupow na dashboardzie
 */
 
 .popup1_overlay {
@@ -254,7 +255,7 @@ hr {
 
 
 /*
-# HERO SECTION ##003
+# HERO SECTION ##003 to jest od hero na /index
 */
 
 .hero {
@@ -350,7 +351,7 @@ hr {
 }
 
 /*
-# THANKS SECTION ##004
+# THANKS SECTION ##004 to jest od /thanks
 */
 
 .ty {
@@ -419,7 +420,7 @@ hr {
 
 
 /*
-# SHARDS SECTION ##005
+# SHARDS SECTION ##005 to jest od /shards
 */
 
 .shards {
@@ -541,80 +542,8 @@ hr {
 	color: white;
 }
 
-
 /*
-# EASTER SECTION ##006
-*/
-
-.easter {
-	font-family: 'Poppins', Helvetica, arial, sans-serif;
-	padding-top: 111px;
-	padding-bottom: 111px;
-	color: white;
-}
-
-.easter h1 {
-    text-transform: none;
-    font-size: 38px;
-    line-height: 1.3;
-    text-align: center;
-}
-
-.easter p {
-	font-size: 19px;
-    margin-top: 15px;
-    margin-bottom: 40px;
-    text-align: center;
-    line-height: 1.8;
-	color: #ffffffb3;
-}
-
-.easter a.clickable {
-	font-family: 'Open Sans', Helvetica, arial, sans-serif;
-	background-color: #7289DA;
-	transition-duration: 0.4s;
-	text-decoration: none;
-	border-radius: 4px;
-	padding: 13px 60px;
-	margin-right: 5px;
-	user-select: none;
-	font-weight: 600;
-	min-height: 32px;
-	margin-left: 5px;
-	cursor: pointer;
-	font-size: 18px;
-	line-height: 1;
-	border: none;
-	color: white;
-}
-
-.easter a.clickable:hover {
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.5);
-}
-
-.easter a.disabled {
-	font-family: 'Open Sans', Helvetica, arial, sans-serif;
-	background-color: #7289DA;
-	transition-duration: 0.4s;
-	text-decoration: none;
-	border-radius: 4px;
-	padding: 13px 60px;
-	margin-right: 5px;
-	user-select: none;
-	font-weight: 600;
-	min-height: 32px;
-	margin-left: 5px;
-	font-size: 18px;
-	line-height: 1;
-	border: none;
-	color: white;
-	opacity: 0.5;
-	cursor: not-allowed;
-}
-
-
-/*
-# DONUT SECTION ##007
+# DONUT SECTION ##007 to jest od /donate
 */
 
 .donut {
@@ -678,7 +607,7 @@ hr {
 
 
 /*
-# TERMS SECTION ##008
+# TERMS SECTION ##008 to jest od /privacy, na poczatku robilem termsy ale potem zrobilem privacy i zapomnialem zmienic klas
 */
 
 .terms {
@@ -700,7 +629,7 @@ hr {
 
 
 /*
-# SERVER SELECT SECTION ##009
+# SERVER SELECT SECTION ##009 to jest od /dashboard/
 */
 
 .serverSelect {
@@ -795,7 +724,7 @@ hr {
 }
 
 /*
-# CARDS SECTION ##010
+# CARDS SECTION ##010 to jest od /index#functions
 */
 
 .cards {
@@ -878,7 +807,7 @@ hr {
 
 
 /*
-# STATISTICS SECTION ##00010
+# STATISTICS SECTION ##00010 to jest od /index#statistics
 */
 
 .statistics {
@@ -923,7 +852,7 @@ hr {
 }
 
 /*
-# TEAM SECTION ##011
+# TEAM SECTION ##011 to jest od /index#team
 */
 
 .team {
@@ -1108,7 +1037,7 @@ hr {
 
 
 /*
-# PLUGIN SECTION ##012
+# PLUGIN SECTION ##012 to jest od /dashboard/ID/PLUGIN/
 */
 
 .modules {
@@ -1410,7 +1339,7 @@ hr {
 }
 
 /*
-# PAGE EDIT SECTION
+# PAGE EDIT SECTION tu bedzie od /dashboard/ID/server_page
 */
 
 #dTi {
@@ -1427,7 +1356,7 @@ hr {
 }
 
 /*
-# LEADERBOARD SECTION
+# LEADERBOARD SECTION to jest od /leaderboard/ID/
 */
 
 .leaderboard .head {
@@ -1588,7 +1517,7 @@ hr {
 }
 
 /*
-# SERVERS SECTION
+# SERVERS SECTION to jest od /servers/
 */
 
 #searchinput {
@@ -1685,7 +1614,7 @@ hr {
 }*/
 
 /*
-# ACCOUNT SECTION
+# ACCOUNT SECTION to jest od /account/
 */
 
 .account {
@@ -1798,7 +1727,7 @@ hr {
 
 
 /*
-# MANAGE SERVER SECTION ##013
+# MANAGE SERVER SECTION ##013 to jest od /dashboard/ID/
 */
 
 .box1 {
@@ -1931,7 +1860,7 @@ hr {
 
 
 /*
-# FOOTER SECTION ##014
+# FOOTER SECTION ##014 to jest od footera ktory raz dziala a raz nie 
 */
 
 .footer {
@@ -1945,7 +1874,7 @@ hr {
 }
 
 /*
-# SCROLLBAR ##015
+# SCROLLBAR ##015 to jest od scrollbaru
 */
 
 ::-webkit-scrollbar {
@@ -1965,67 +1894,8 @@ hr {
 ::-webkit-scrollbar-thumb:hover {
 	background: #99AAB5; 
 }
-
 /*
-#scrollpath {
-	position: fixed;
-	width: 5px;
-	height: 100%;
-	top: 0;
-	right: 0;
-}
-
-#scrollbar {
-	position: fixed;
-	width: 5px;
-	border-radius: 15px;
-	height: 0%;
-	top: 0;
-	right: 0;
-	background: linear-gradient(to top, #008aff, #00ffe7);
-	animation: progressanim 6s linear infinite;
-}
-
-@keyframes progressanim {
-	0%, 100% {
-		filter: hue-rotate(0deg);
-	}
-	25% {
-		filter: hue-rotate(180deg);
-	}
-	50% {
-		filter: hue-rotate(360deg);
-	}
-	75% {
-		filter: hue-rotate(620deg);
-	}
-}
-
-#scrollbar:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to top, #008aff, #00ffe7);
-	filter: blur(25px);
-}
-
-#scrollbar:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to top, #008aff, #00ffe7);
-	filter: blur(25px);
-}
-*/
-
-/*
-# NAVIGATION BAR ##016
+# NAVIGATION BAR ##016 to jest od navbaru
 */
 
 .topnav {
@@ -2213,7 +2083,7 @@ hr {
 }
 
 /*
-# ICONS ##018
+# ICONS ##018 to jest od ikonek na /dashboard/ID i /dashboard/ID/PLUGIN
 */
 
 .icodcstat {
@@ -2266,53 +2136,17 @@ hr {
 # NO RESPONSIVE ##019
 */
 
-.noresponsiveH1 {
-	color: white;
-	font-size: 35px;
-	display: none;
-	text-align: center;
-	margin: 3px;
-	font-weight: bold;
-}
-
-.noresponsiveP {
-	font-size: 15px;
-	display: none;
-	text-align: center;
-	margin: 1px;
-}
-
-a {
-	text-decoration: none;
-	color: white;
-}
-
-a:active {
-	color: white;
-}
-
-a .elements2Description {
-	text-decoration: none;
-	color: #ffffffb3;
-}
-
-a:active .elements2Description {
-	color: #ffffffb3;
-}
 
 
 
-
-
-
-
+/* tu bedzie komunikat ze strona nie jest jeszcze responsywna */
 
 
 
 
 
 /*
-# SHINE ANIMATION EFFECT by wnm210 (available on codepen)  ##020
+# SHINE BUTTON ANIMATION   ##020
 # https://codepen.io/wnm210/pen/qBaBKbr
 */
 
@@ -2341,29 +2175,6 @@ a:active .elements2Description {
 	background: -webkit-gradient(linear, left top, left bottom, from(var(--shine-degree)), color-stop(transparent), color-stop(var(--shine-color)), to(transparent));
 	background: linear-gradient(var(--shine-degree), transparent, var(--shine-color), transparent);
 }
-
-/*
-
-	font-family: 'Open Sans', Helvetica, arial, sans-serif;
-	background-color: #7289DA;
-	transition-duration: 0.4s;
-	text-decoration: none;
-	border-radius: 4px;
-	padding: 13px 60px;
-	margin-right: 5px;
-	user-select: none;
-	font-weight: 600;
-	min-height: 32px;
-	margin-left: 5px;
-	cursor: pointer;
-	font-size: 18px;
-	line-height: 1;
-	border: none;
-	color: white;
-
-*/
-
-
 
 .pluginLoadingButton {
 	position: relative;
@@ -2543,7 +2354,7 @@ a:active .elements2Description {
 
 
 /*
-# TOGGLES FROM CODEPEN (wcale nie jest tak ze mi sie nie chcialo) ##024
+# TOGGLES FROM CODEPEN (wcale nie jest tak ze mi sie nie chcialo) ##024 to jest od przelacznikow
 # https://codepen.io/aaroniker/pen/ZEYoxEY
 */
 
@@ -2749,7 +2560,7 @@ a:active .elements2Description {
 
 
 /*
-# HEADERS SECTION ##021
+# HEADERS SECTION ##021 to jest od headerow
 */
 
 .header1 {
@@ -2826,7 +2637,7 @@ a:active .elements2Description {
 }
 
 /*
-# TIP SECTION ##022
+# TIP SECTION ##022 to jest od tych komunikatow jak sie na cos najezdza 
 */
 
 .tooltip {
@@ -2857,7 +2668,7 @@ a:active .elements2Description {
 
 
 /*
-# ICONS ##023
+# ICONS ##023 ponownie ikonki tylko te lepsze
 */
 
 .icon-new {
@@ -2898,7 +2709,7 @@ a:active .elements2Description {
 }
 
 /*
-# RESPONSIVE PAGE ##024
+# RESPONSIVE PAGE ##024 tu ma byc strona responsywna
 */
 
 
@@ -2908,71 +2719,13 @@ a:active .elements2Description {
 	}
 }
 
-/*@media screen and (max-width: 800px) {
-	.snowflakes {display: none;}
-	.topnav {display:none;}
-	.topnav-mobile {display:block;}
-	.notification {
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-	}
-	.notification h1 {
-		font-size: 19px;
-		line-height: 1;
-	}
-	.notification-box-sticky {
-		position: relative;
-	}
-	.responsive-info {display: block;}
-	.hero {
-		padding-top: 120px;
-		padding-bottom: 200px;
-	}
-	.hero a {
-		display: grid;
-		margin-bottom: 10px;
-	}
-	.cards img {
-		border-radius: 20px;
-		margin: 10px;
-		width: 100%;
-		height: auto;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.add {margin-top: 100px;margin-bottom: 0;margin-left: 0;margin-right: 0;}
-	.add a {display: grid;}
-}
-
-@media screen and (min-width: 800px) {
-	.topnav-mobile {display:none;}
-	.responsive-info {display:none;}
-}
-
-
-@media screen and (max-width: 800px) {
-	hr {display: none;}
-	.topnav {display: none;}
-	.hero {display: none;}
-	.terms {display: none;}
-	.donut {display: none;}
-	.dashboard {display: none;}
-	.cards {display: none;}
-	.box1 {display: none;}
-	.box2 {display: none;}
-	.box3 {display: none;}
-	.add {display: none;}
-	.footer {display: none;}
-	.noresponsive {display: block;}
-	.noresponsiveP {display: block;}
-	.noresponsiveH1 {display: block;}
-	.backgnd{background-color:none;background-image:url(https://cdn.vavebot.pl/smudge.png);height:500px;}
-}*/
-
 @media screen and (max-width: 750px) {
 	body {filter: blur(100px);}
 }
+
+/*
+# RICK ASTLEY WITH NEVER GONNA GIVE YOU UP	 a tu jest rickroll
+*/
 
 #rr0ll {
 	margin: 0;
