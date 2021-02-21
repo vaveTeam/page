@@ -875,9 +875,8 @@ hr {
     flex-wrap: wrap;
 	margin-left: auto;
 	margin-right: auto;
-	width: 458px;
+	width: 636.8px;
 	text-align: center;
-	/* border: 1px solid white; */
 }
 
 .team .row2 {
@@ -932,6 +931,15 @@ hr {
 	margin-top: 5px;
 	margin-left: 20px;
 	margin-right: 0px;
+	/* border: 1px solid black;*/
+}
+
+.team .u1p {
+	text-align: center;
+	width: 173.28px;
+	height: 208px;
+	margin-top: 5px;
+	margin-left: 10px;
 	/* border: 1px solid black;*/
 }
 
