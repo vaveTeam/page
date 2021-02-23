@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: *
-Allow: /index.html
-Allow: /shop/index.html
-Allow: /servers/index.html
