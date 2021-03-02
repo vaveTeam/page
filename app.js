@@ -34,7 +34,7 @@ app.use(
 
   app.get('/', (req, res) => {
     res.render('home', { 
-        pageTitle: 'Globalni | Strona Główna',
+        pageTitle: 'vave | Home',
         user: req.user
   });
 });
